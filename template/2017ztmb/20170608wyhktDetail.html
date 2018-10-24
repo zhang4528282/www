@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>人民政协网-委员会客厅点京专题</title>
+		<style>
+			*{
+				font-family:"微软雅黑","Microsoft Yahei","SimSun","宋体","Arial Narrow","å¾è½¯é›…é»‘";
+				border:none;
+				margin:0px;
+				padding:0px;
+				letter-spacing:0;
+				font-weight:normal;
+				/*                font-size:0px;*/
+				box-sizing: border-box;
+			}
+			body{
+				min-width:1300px;
+			}
+			/*
+			p{
+			text-indent: 2em;
+			}
+			*/
+			b,strong{
+				font-weight:bold;
+			}
+			ul,ol,li{
+				list-style:none;
+				list-style-position:inside;
+			}
+			a{
+				text-decoration:none;
+				cursor:pointer;
+			}
+			#header,#body,#footer{
+				width:100%;
+				position:relative;
+				overflow:hidden;
+			}
+			.contentBar{
+				min-height:1px;
+				width:1244px;
+				margin:0 auto;
+				position:relative;
+				overflow:hidden;
+				/*                background-color:red;*/
+			}
+			.fullBar{
+				min-height:1px;
+				width:100%;
+				margin:0 auto;
+				position:relative;
+				overflow:hidden;
+				/*                background-color: yellow;*/
+			}
+			.fl{
+				float:left;
+			}
+			.fr{
+				float:right;
+			}
+			.clearfix:after{
+				content:".";
+				display:block;
+				height:0;
+				clear:both;
+				visibility:hidden
+			}
+
+			.clearfix {
+				clear: both;
+			}
+			.inline{
+				display:inline-block;
+				display:-moz-inline-block;
+				zoom:1;
+				*display:inline;
+				overflow:hidden;
+			}
+
+			/*模块标题*/
+			.column{
+				width:1244px;
+				height:auto;
+				overflow:hidden;
+				border-bottom:1px solid #e0e0e0;
+				text-align: center;
+				margin:24px auto 26px;
+			}
+			.column a{
+				display:inline-block;
+				font-size:25px;
+				color:#000000;
+				line-height:38px;
+				border-bottom:2px solid #146bb9;
+			}
+		</style>
+
+		<script src="/js/jquery-1.8.3.min.js"></script>
+		<script src="/js/getByclass.js"></script>
+		<script src="/js/moveGood.js"></script>
+	</head>
+	<body>
+		<!--弹框  遮罩-->
+		<style>
+			#jumpBox{
+				width:960px;
+				height:656px;
+				overflow:hidden;
+				background-image: url('/images/2017zt/20170608wyhkt/index-img/jump_box.jpg');
+				background-repeat: no-repeat;
+				padding:190px 95px 66px 121px;
+				position:fixed;
+				left:50%;
+				top:50%;
+				transform: translate(-50%,-50%);
+				z-index:1;
+			}
+			#jumpBox .box{
+				width:100%;
+				height:100%;
+/*				background-color:#ffffff;*/
+				overflow:scroll;
+				font-size:14px;
+				line-height:1.6rem;
+				color:#707070;
+			}
+			
+			/*滚动条*/
+			#jumpBox ::-webkit-scrollbar{
+				width:6px;
+				height:6px;
+			}
+
+			#jumpBox ::-webkit-scrollbar-track-piece{
+				background-color:#CCCCCC;
+				-webkit-border-radius:6px;
+			}
+
+			#jumpBox ::-webkit-scrollbar-thumb:vertical{
+				height:5px;
+				background-color:#2464aa;
+				-webkit-border-radius:6px;
+			}
+
+			#jumpBox ::-webkit-scrollbar-thumb:horizontal{
+				width:5px;
+				background-color:#CCCCCC;
+				-webkit-border-radius:6px;
+			}
+			/*滚动条结束*/
+			#jumpBox .close{
+				width:40px;
+				height:40px;
+				position:absolute;
+				top:36px;
+				right:62px;
+			}
+		</style>
+		<div id="jumpBox" style="display:none;">
+			<div class="box">
+				<p>[主持人]</p>
+				<p>各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。</p>
+				<p>[嘉宾]</p>
+				<p>各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。</p>
+				<p>[主持人]</p>
+				<p>各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。</p>
+				<p>[嘉宾]</p>
+				<p>各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。</p>
+				<p>[主持人]</p>
+				<p>各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。</p>
+				<p>[嘉宾]</p>
+				<p>各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。</p>
+			</div>
+			<span class="close"></span>
+		</div>
+		<script>
+			var oJump = document.getElementById('jumpBox');
+			var oClose = getByClass(oJump,'close')[0];
+			oClose.onclick = function(){
+				oJump.style.display = 'none';
+			}
+			window.onload = function(){
+				var oBody = document.getElementById('body');
+				var oJmjs = getByClass(oBody,'jmjs')[0];
+//				console.log(oJmjs);
+				oJmjs.onclick = function(){
+					oJump.style.display = 'block';
+				}
+			}
+		</script>
+			
+		
+		<!--header style start-->
+		<style>
+			#header{
+				width:100%;
+				height:auto;
+				overflow:hidden;
+
+			}
+			#header .headerImg{
+				width:100%;
+				height:auto;
+			}
+
+		</style>
+		<!--header style end-->
+		<div id="header">
+			<img class="headerImg" src="/images/2017zt/20170608wyhkt/index-img/index_header1900x497.jpg" alt="委员会客厅点京专题-人民政协网">
+		</div>
+
+
+		<div id="body">
+
+			<!--节目介绍-->
+			<div class="contentBar">
+				<style>
+					.jmjs{
+						padding-left:120px;
+						width:1244px;
+						height:105px;
+						overflow:hidden;
+						background-image: url('/images/2017zt/20170608wyhkt/index-img/jmjs_box.jpg');
+					}
+					.jmjs h1{
+						width:1108px;
+						height:80%;
+						margin-top:10px;
+						overflow:hidden;
+						font-size:15px;
+						line-height:1.5rem;
+						color:#707070;
+					}
+				</style>
+				<div class="jmjs">
+					<h1>各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进五位一 总体布局和协调推进四个全面战略布局，深入推进伟大事业、伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进各位委员，中共十八大以来。统筹推进五位一 总体布局和协调推进四个全面战略布局，深入推进伟大事业、伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进各位委员，中共十八大以来。</h1>
+				</div>
+			</div>
+			<!--节目介绍结束-->
+
+			<!--第一部分开始-->
+			<div class="contentBar" id="ct1">
+				<!--最新视频播放节目模块-->
+				<style>
+					.nowTV{
+						margin-top:22px;
+						width:100%;
+						height:585px;
+						overflow:hidden;
+						border:1px solid #d8d8d8;
+						padding:2px;
+					}
+					.nowTV .nowTitle{
+						text-align:center;
+						font-size:38px;
+						line-height:73px;
+						font-weight:bold;
+						color:#333333;
+					}
+					.nowTV .nowSum{
+						text-align:center;
+						font-size:14px;
+						line-height: 27px;
+						color:#504d4d;
+						margin-bottom:28px;
+					}
+					.nowTV .nowContent{
+						width:100%;
+						height:417px;
+						overflow:hidden;
+						position:relative;
+					}
+					
+					
+					
+					/*右边视频介绍*/
+					.nowTV .nowContent .text{
+						width:558px;
+						height:417px;
+						overflow:hidden;
+					}
+					.nowTV .nowContent .text .jieshao{
+						width:100%;
+						height:170px;
+						overflow:hidden;
+						position:relative;
+						margin-bottom:22px;
+					}
+					.nowTV .nowContent .text .jieshao .top{
+						font-size:22px;
+						line-height:29px;
+						color:#000000;
+						height:29px;
+						text-align: left;
+						border-bottom:1px solid #e0e0e0;
+					}
+					.nowTV .nowContent .text .jieshao .shenfen{
+						width:100%;
+						height:137px;
+						padding-top:9px;
+						
+					}
+					.nowTV .nowContent .text .jieshao .shenfen img{
+						display:inline-block;
+						float:left;
+						width:128px;
+						height:128px;
+						background-color:#ececec;
+						margin-right:14px;
+					}
+					.nowTV .nowContent .text .jieshao .shenfen .xinxi{
+						display:inline-block;
+						width:373px;
+						height:128px;
+						float:left;
+					}
+					.nowTV .nowContent .text .jieshao .shenfen .xinxi h3{
+						font-size:22px;
+						color:#146bb9;
+						font-weight:bold;
+						text-align: left;
+						width:100%;
+						height:40px;
+						line-height:40px;
+					}
+					.nowTV .nowContent .text .jieshao .shenfen .xinxi .ptop{
+						width:100%;
+						height:20px;
+						font-size:16px;
+						color:#707070;
+						line-height:20px;
+						margin-bottom:24px;
+					}
+					.nowTV .nowContent .text .jieshao .shenfen .xinxi .pbtm{
+						width:100%;
+						height:28px;
+						font-size:14px;
+						color:#707070;
+						line-height:24px;
+					}
+					
+					
+					
+					/*精华版视频布局样式*/
+					.nowTV .nowContent .text .jinghua{
+						width:100%;
+						height:227px;
+						overflow:hidden;
+						position:relative;
+					}
+					.nowTV .nowContent .text .jinghua .top{
+						font-size:22px;
+						line-height:29px;
+						color:#000000;
+						height:29px;
+						text-align: left;
+						border-bottom:1px solid #e0e0e0;
+						margin-bottom:38px;
+					}
+					
+					
+					/*左边播放器布局*/
+					.nowTV .nowContent .player{
+						width:671px;
+						height:417px;
+						overflow:hidden;
+						background: url('/images/2017zt/20170608wyhkt/index-img/player.jpg') no-repeat;
+						position:relative;
+					}
+					
+					#player .wanzhengV{
+						position:absolute;
+						top:0px;
+						left:0px;
+						width:671px;
+						height:417px;
+						overflow:hidden;
+					}
+					#player .jinghuaV{
+						position:absolute;
+						top:0px;
+						left:0px;
+						width:671px;
+						height:417px;
+						overflow:hidden;
+					}
+					#player .jinghuaV .jhVideo{
+						position:absolute;
+						top:0px;
+						left:0px;
+						width:671px;
+						height:417px;
+						overflow:hidden;
+/*						display:none;*/
+					}
+					#player .jinghuaV .jhVideo img{
+						width:100%;
+						height:100%;
+						overflow:hidden;
+					}
+				</style>
+
+				<!--视频播放-->
+				<div class="nowTV">
+					<!--标题-->
+					<a href="#"><h1 class="nowTitle" target="_blank">北京市政协委员某某某做客人民政协网《委员会客厅.点京》节目</h1></a>
+					<!--摘要-->
+					<p class="nowSum">各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民筹推进“五位一体”总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程。</p>
+					
+					<div class="nowContent">
+						<!--播放器-->
+						<div class="player fl" id="player">
+							<!--完整版-->
+							<div class="wanzhengV" style="display:block;"></div>
+							<!--精华版-->
+							<div class="jinghuaV" style="display:none;">
+								<div class="jhVideo">
+									<img src="/images/2017zt/20170303qglh/youqing1.png" alt="">
+								</div>
+								<div class="jhVideo">
+									<img src="/images/2017zt/20170303qglh/youqing2.png" alt="">
+								</div>
+								<div class="jhVideo">
+									<img src="/images/2017zt/20170303qglh/youqing3.png" alt="">
+								</div>
+								<div class="jhVideo">
+									<img src="/images/2017zt/20170303qglh/youqing4.png" alt="">
+								</div>
+								<div class="jhVideo">
+									<img src="/images/2017zt/20170303qglh/youqing5.png" alt="">
+								</div>
+							</div>
+						</div>
+						<!--视频相应介绍-->
+						<div class="text fr">
+							<!--嘉宾介绍-->
+							<div class="jieshao">
+								<p class="top">嘉宾介绍</p>
+								<div class="shenfen">
+									<img src="#" alt="">
+									<div class="xinxi">
+										<h3>嘉宾姓名</h3>
+										<p class="ptop">嘉宾身份介绍嘉宾身份介绍</p>
+										<p class="pbtm">中国共产党将召开第十九次全国代表大会，这是党和国家政治生活中的一件大事置身伟大时代。</p>
+									</div>
+								</div>
+							</div>
+							<!--精华版视频-->
+							<div class="jinghua">
+								<p class="top">精华版视频</p>
+								
+								<!--精华版视频切换按钮入口-->
+								<style>
+									.vids{
+										width:100%;
+										height:157px;
+										overflow:hidden;
+										position:relative;
+										padding:0px 18px;
+									}
+									.vids .vidsBox{
+										width:100%;
+										height:100%;
+										overflow:hidden;
+										position:relative;
+									}
+									.vids ul{
+										height:100%;
+										overflow:hidden;
+										position:relative;
+										position:absolute;
+										top:0px;
+										left:0px;
+									}
+									.vids ul li{
+										width:250px;
+										height:157px;
+										margin:0px 5px;
+										float:left;
+										background-color:#ffffff;
+										position:relative;
+									}
+									.vids ul li img{
+										width:250px;
+										height:100%;
+										overflow:hidden;
+										background-color:#000000;
+									}
+									.vids ul li i{
+										display:inline-block;
+										width:74px;
+										height:69px;
+										background-image: url('../../images/2017zt/20170623qgzxcwh/palyBtn.png');
+										background-repeat: no-repeat;
+										position: absolute;
+										top:50%;
+										left:50%;
+										transform: translate(-50%,-50%);
+									}
+									.vids ul li .box{
+										width:250px;
+										height:157px;
+										position: absolute;
+										top:0px;
+										left:0px;
+										background-color: rgba(0,0,0,0.5);
+										cursor: pointer;
+										display:none;
+										z-index:1;
+									}
+									.vids ul li .box p{
+										text-align: center;
+										font-size:14px;
+										color:#ffffff;
+										position: absolute;
+										top:50%;
+										left:50%;
+										width:245px;
+										transform: translate(-50%,-50%);
+									}
+									
+									.vids ul li:hover .box{display: block;}
+									.vids ul li .box p:hover{text-decoration: underline;}
+									/*左右小按钮*/
+									.vids .miniLbtn{
+										position:absolute;
+										top:50%;
+										transform: translateY(-50%);
+										-webkit-transform: translateY(-50%);
+										-moz-transform: translateY(-50%);
+										-ms-transform: translateY(-50%);
+										-o-transform: translateY(-50%);
+										left:0px;
+										width:14px;
+										height:24px;
+										background-image: url('/images/2017zt/20170608wyhkt/index-img/left_mini.png');
+										
+									}
+									.vids .miniRbtn{
+										position:absolute;
+										top:50%;
+										transform: translateY(-50%);
+										-webkit-transform: translateY(-50%);
+										-moz-transform: translateY(-50%);
+										-ms-transform: translateY(-50%);
+										-o-transform: translateY(-50%);
+										right:0px;
+										width:14px;
+										height:24px;
+										background-image: url('/images/2017zt/20170608wyhkt/index-img/right_mini.png');
+
+									}
+								</style>
+								
+								<div class="vids" id="vids">
+									<div class="vidsBox">
+										<ul>
+											<li>
+												<img src="#" alt="">
+												<i></i>
+												<div class="box">
+													<p>北京市政协委员王玉英作何人民政协网委员会客厅点京节目</p>
+												</div>
+											</li>
+											<li>
+												<img src="#" alt="">
+											</li>
+											<li>
+												<img src="#" alt="">
+											</li>
+											<li>
+												<img src="#" alt="">
+											</li>
+											<li>
+												<img src="#" alt="">
+											</li>
+										</ul>
+									</div>
+									<a href="jacascript:;" class="miniLbtn"></a>
+									<a href="javascript:;" class="miniRbtn"></a>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					
+					var oVids = document.getElementById('vids');
+					var oVidsUl = oVids.getElementsByTagName('ul')[0];
+					/*获取每个精华视频对应的按钮图片*/
+					var arrVidsLi = oVidsUl.getElementsByTagName('li');
+					/*获取左边播放窗口*/
+					var oPlayer = document.getElementById('player');
+					/*完整视频的*/
+					var oWzv = getByClass(oPlayer,'wanzhengV')[0];
+					/*精华视频*/
+					var oJhv = getByClass(oPlayer,'jinghuaV')[0];
+					/*复制一份*/
+					oJhv.innerHTML = oJhv.innerHTML+oJhv.innerHTML;
+					var arrJhv = getByClass(oJhv,'jhVideo');
+//					console.log(arrJhv);
+
+					
+					/*先实现左右按钮滚动*/
+					oVidsUl.innerHTML = oVidsUl.innerHTML+oVidsUl.innerHTML;
+					var oVidsUlNum = arrVidsLi.length*arrVidsLi[0].offsetWidth;
+//					console.log(oVidsUlNum);
+					oVidsUl.style.width = oVidsUlNum+'px';
+					/*小按钮*/
+					var oMiniLbtn = getByClass(oVids,'miniLbtn')[0];
+					var oMiniRbtn = getByClass(oVids,'miniRbtn')[0];
+
+					/*左移*/
+					function moveL(){
+						if(oVidsUl.offsetLeft<-oVidsUl.offsetWidth/2){
+							oVidsUl.style.left = '0px';
+						}
+						oVidsUl.style.left = (oVidsUl.offsetLeft-2)+'px';
+					} 
+					var moveLeft = null;
+					oMiniLbtn.onmouseover = function(){
+						moveLeft = setInterval(moveL,30);
+					}
+					oMiniLbtn.onmouseout = function(){
+						clearInterval(moveLeft);
+					}
+
+					/*右移*/
+					function mover(){
+						if(oVidsUl.offsetLeft>0){
+							oVidsUl.style.left = (-oVidsUl.offsetWidth/2)+'px';
+						}
+						oVidsUl.style.left = (oVidsUl.offsetLeft+2)+'px';
+					}
+					var moveRight = null;
+					//				var goLeft = setInterval(gogol,30);
+					oMiniRbtn.onmouseover = function(){
+						moveRight = setInterval(mover,30);
+					}
+					oMiniRbtn.onmouseout = function(){
+						clearInterval(moveRight);
+					}
+					
+					
+					
+					/*实现点击右侧精华版图片左侧播放相应的视频*/
+//					初始化
+					/*默认播放完整版*/
+					oWzv.style.display = "block";
+					oJhv.style.display = "none";
+					for(var i=0;i<arrJhv.length;i++){
+						arrJhv[i].style.display = "none";
+					}
+					/*arrVidsLi arrJhv*/
+//					console.log(arrVidsLi);
+					for(var j=0;j<arrVidsLi.length;j++){
+						arrVidsLi[j].index = j;
+						arrVidsLi[j].onclick = function(){
+							oWzv.style.display = "none";
+							oJhv.style.display = "block";
+							for(var k=0;k<arrJhv.length;k++){
+								arrJhv[k].style.display = "none";
+							}
+							arrJhv[this.index].style.display = "block";
+						}
+					}
+					
+					
+				</script>
+				<!--播放区域结束-->
+				
+				
+
+
+				<!--访谈实录布局-->
+				<style>
+					/*滚动条*/
+					#ct1 ::-webkit-scrollbar{
+						width:6px;
+						height:6px;
+					}
+
+					#ct1 ::-webkit-scrollbar-track-piece{
+						background-color:#CCCCCC;
+						-webkit-border-radius:6px;
+					}
+
+					#ct1 ::-webkit-scrollbar-thumb:vertical{
+						height:5px;
+						background-color:#2464aa;
+						-webkit-border-radius:6px;
+					}
+
+					#ct1 ::-webkit-scrollbar-thumb:horizontal{
+						width:5px;
+						background-color:#CCCCCC;
+						-webkit-border-radius:6px;
+					}
+					/*滚动条结束*/
+					.shilu .shiluContent{
+						width:1244px;
+						height:510px;
+						padding:54px 44px;
+						background:url('/images/2017zt/20170608wyhkt/index-img/ftsl_bg.jpg') no-repeat;
+						overflow-x:hidden;
+						overflow-y:scroll;
+					}
+					.shilu .shiluContent p{
+						font-size:14px;
+						line-height:21px;
+						color:#4f4f50;
+					}
+					.people{
+						font-size:20px;
+						font-weight:bold;
+						color:#146bb9;
+					}
+
+				</style>
+				<!--访谈实录-->
+				<div class="shilu">
+					<!--模块标题-->
+					<div class="column">
+						<a href="#" target="_blank">访谈实录</a>
+					</div>
+					<!--实录内容-->
+					<div class="shiluContent">
+						<p>[主持人]</p>
+						<p>各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。</p>
+						<p>[嘉宾]</p>
+						<p>各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。</p>
+						<p>[主持人]</p>
+						<p>各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。</p>
+						<p>[嘉宾]</p>
+						<p>各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。</p>
+						<p>[主持人]</p>
+						<p>各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。</p>
+						<p>[嘉宾]</p>
+						<p>各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。各位委员，中共十八大以来，以习近平同志为核心的中共中央团结带领全国各族人民，统筹推进“五位一 总体布局和协调推进“四个全面”战略布局，深入推进伟大事业伟大工程、伟大斗争，朝着中华民族伟大复兴的光辉彼岸奋勇前进。</p>
+					</div>
+					<!--判断 主持人和嘉宾的字 来设置样式-->
+					<script>
+						var oCt1 = document.getElementById('ct1')
+
+						var oShiluContent = getByClass(oCt1,'shiluContent')[0];
+						var arrShiluP = oShiluContent.getElementsByTagName('p');
+						//						console.log(arrShiluP);
+						for(var i=0;i<arrShiluP.length;i++){
+							if(arrShiluP[i].innerHTML == '[主持人]' || arrShiluP[i].innerHTML == '[嘉宾]'){
+								arrShiluP[i].ClassName = '.people';
+								//								console.log(arrShiluP[i]);
+								arrShiluP[i].style.fontSize = '20px';
+								arrShiluP[i].style.fontWeight = 'bold';
+								arrShiluP[i].style.color = '#146bb9';
+								arrShiluP[i].style.margin = "14px 0px";
+							}
+						}
+					</script>
+				</div>
+
+			</div>
+			<!--第一部分结束-->
+			
+			
+			<!--第二部分 往期回顾开始-->
+			<style>
+				/*往期回顾标题模块 居左*/
+				.columnl{
+					width:1244px;
+					height:auto;
+					overflow:hidden;
+					border-bottom:1px solid #e0e0e0;
+					text-align: left;
+					margin:24px auto 26px;
+				}
+				.columnl a{
+					display:inline-block;
+					font-size:25px;
+					color:#000000;
+					line-height:38px;
+					border-bottom:2px solid #146bb9;
+				}
+				.wangqi{
+					padding-bottom:34px;
+				}
+				.wangqi .wangqiContent{
+					width:100%;
+					height:178px;
+					overflow:hidden;
+					position:relative;
+				}
+				.wangqi .wangqiContent .group6_1{
+					width:1244px;
+					height:477px;
+					overflow:hidden;
+					float:left;
+				}
+				.wangqi .wangqiContent .group6_1 li{
+					width:307px;
+					height:178px;
+					margin:2px;
+					float:left;
+					background-color:#616161;
+					position:relative;
+					overflow:hidden;
+				}
+				.wangqi .wangqiContent .group6_1 li img{
+					width:100%;
+					height:100%;
+				}
+				.wangqi .wangqiContent .group6_1 li .text{
+					width:100%;
+					height:29px;
+					position:absolute;
+					left:0px;
+					bottom:-0px;
+					overflow:hidden;
+					background-color:rgba(0,0,0,0.5);
+				}
+				.wangqi .wangqiContent .group6_1 li .text h1{
+					font-size:14px;
+					line-height:27px;
+					color:#ffffff;
+					text-align:center;
+				}
+			</style>
+			<div class="contentBar" id="ct2">
+				<div class="wangqi" id="wangqi">
+					<!--模块标题-->
+					<div class="columnl">
+						<a href="#" target="_blank">往期回顾</a>
+					</div>
+					<!--往期回顾-->
+					<div class="wangqiContent">
+						<ul class="group6_1">
+							<li>
+								<a href="#" target="_blank">
+									<img src="/images/2017zt/20170608wyhkt/index-img/images/1376520.jpg" alt="">
+									<div class="text">
+										<h1>第十二届全国人民代表大会第四次会议</h1>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<img src="/images/2017zt/20170608wyhkt/index-img/images/1376520.jpg" alt="">
+									<div class="text">
+										<h1>第十二届全国人民代表大会第四次会议</h1>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<img src="/images/2017zt/20170608wyhkt/index-img/images/1376520.jpg" alt="">
+									<div class="text">
+										<h1>第十二届全国人民代表大会第四次会议</h1>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<img src="/images/2017zt/20170608wyhkt/index-img/images/1376520.jpg" alt="">
+									<div class="text">
+										<h1>第十二届全国人民代表大会第四次会议</h1>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--第二部分往期回顾结束-->
+			
+
+
+			<!--第三部分开始-->
+			<div class="fullBar" id="ct3">
+				<!--精彩瞬间-->
+				<style>
+					.shunjian{
+						padding-bottom:34px;
+					}
+					.shunjian .shunjianContent{
+						width:100%;
+						height:650px;
+						overflow:hidden;
+						position:relative;
+						background: url('/images/2017zt/20170608wyhkt/index-img/jcsj_bg.jpg') no-repeat;
+						background-size:cover;
+						padding-top:30px;
+					}
+					
+					/*异形轮播 样式*/
+					.lunbo{width:1244px;height:572px;margin:0px auto;padding:0px 52px;position:relative;overflow:hidden;}
+					.yixing{width:100%;height:100%;overflow:hidden;position:relative;}
+					.yixing ul{list-style:none;}
+					.yixing ul li{position:absolute;}
+
+					/*		.yixing ul li.stateA{width:55px;height:37px;left:-55px;top:84px;}*/
+					.yixing ul li.stateB{width:55px;height:37px;left:-55px;top:221px;z-index:0;}
+					.yixing ul li.stateC{width:486px;height:351px;left:0px;top:221px;z-index:1;}
+					.yixing ul li.stateD{width:797px;height:572px;left:191px;top:0px;z-index:2;}
+					.yixing ul li.stateE{width:486px;height:351px;left:758px;top:221px;z-index:1;}
+					.yixing ul li.stateF{width:55px;height:37px;left:678px;top:221px;z-index:0;}
+					/*		.yixing ul li.stateG{width:55px;height:37px;left:678px;top:84px;}*/
+
+					.yixing ul li img{width:100%;height:100%;}
+					.yixing ul li p{width:100%;height:30px;position:absolute;bottom:0px;left:0px;background-color:rgba(0,0,0,0.7);color:#ffffff;text-align: center;font-size:14px;line-height:30px;}
+
+					.leftBtn{position:absolute;top:370px;left:0px;width:34px;height:64px;background-image: url('/images/2017zt/20170608wyhkt/index-img/left.png');}
+					.rightBtn{position:absolute;top:370px;right:0px;width:34px;height:64px;background-image: url('/images/2017zt/20170608wyhkt/index-img/right.png');}
+
+					
+				</style>
+				<div class="shunjian" id="shunjian">
+					<!--模块标题-->
+					<div class="column">
+						<a href="#" target="_blank">精彩瞬间</a>
+					</div>
+					<!--瞬间内容-->
+					<div class="shunjianContent">
+						<div class="contentBar" style="height:596px;">
+							<div class="lunbo">
+								<div class="yixing">
+									<ul>
+										<!--			<li class="stateA"><img src="image/number/0.png" alt=""></li>-->
+										<li class="stateB"><img src="image/number/1.png" alt=""><p>第十二届全国人民代表大会第四次会议</p></li>
+										<li class="stateC"><img src="image/number/2.png" alt=""><p>第十二届全国人民代表大会第四次会议</p></li>
+										<li class="stateD"><img src="image/number/3.png" alt=""><p>第十二届全国人民代表大会第四次会议</p></li>
+										<li class="stateE"><img src="image/number/4.png" alt=""><p>第十二届全国人民代表大会第四次会议</p></li>
+										<li class="stateF"><img src="image/number/5.png" alt=""><p>第十二届全国人民代表大会第四次会议</p></li>
+										<!--			<li class="stateG"><img src="image/number/6.png" alt=""></li>-->
+									</ul>
+
+								</div>
+
+								<a href="javascript:;" class="leftBtn" id="leftBtn"></a>
+								<a href="javascript:;" class="rightBtn" id="rightBtn"></a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<script>
+					$(function(){
+						var liArray = [];
+						var JSONarr = [];
+						var timer = null;
+						//将所有的图片数据存在数组中
+						for(var i=0;i<$(".yixing li").length;i++){
+							JSONarr.push(
+								{
+									"z-index" : $(".yixing li").eq(i).css("z-index"),
+									"width" : $(".yixing li").eq(i).css("width"),
+									"height" : $(".yixing li").eq(i).css("height"),
+									"left" : $(".yixing li").eq(i).css("left"),
+									"top" : $(".yixing li").eq(i).css("top")
+								}
+							)
+							liArray.push($(".yixing li").eq(i));
+						}
+
+						//自动轮播
+						//			autoPlay();
+
+						function autoPlay(){
+							clearInterval(timer);
+							timer = setInterval(function(){
+								for(var i=1;i<=4;i++){
+									$(liArray[i]).animate(JSONarr[i-1],1000);
+								}
+								$(liArray[0]).css(JSONarr[4]);
+								liArray.push(liArray.shift());
+							},2000);
+						}
+
+						//鼠标移入移出
+						//			$(".yixing").mouseenter(function(){clearInterval(timer)}).mouseleave(function(){autoPlay()});
+
+						//左右按钮点击
+						$(".rightBtn").click(function(){
+							if($(liArray[1]).is(":animated")){return;}else{
+								for(var i=1;i<=4;i++){
+									$(liArray[i]).animate(JSONarr[i-1],1000);
+								}
+								$(liArray[0]).css(JSONarr[4]);
+								liArray.push(liArray.shift());
+							} 
+						});
+
+						$(".leftBtn").click(function(){
+							if($(liArray[1]).is(":animated")){return;}else{
+								for(var i=3;i>=0;i--){
+									$(liArray[i]).animate(JSONarr[i+1],1000);
+								}
+								$(liArray[4]).css(JSONarr[0]);
+								liArray.unshift(liArray.pop());
+							}
+						});
+
+
+
+
+					});
+				</script>
+				
+			</div>
+			<!--第三部分 精彩瞬间结束-->
+			
+			
+		</div>
+			
+
+
+
+			
+		<!--尾部 footer-->
+		<style>
+			#footer{
+				height:198px;
+				background-color:#146bb9;
+				padding:23px 0px 15px;
+			}
+			#footer .contentBar{
+				height:100%;
+			}
+			#footer .fl{
+				width:948px;
+				height:100%;
+				overflow:hidden;
+				border-right:1px solid #ffffff;
+				color:#ffffff;
+			}
+			#footer .fl ul{
+				width:948px;
+				height：64px;
+				margin-top:10px;
+				overflow:hidden;
+			}
+			#footer .fl ul li{
+				float:left;
+				width:237px;
+				height:32px;
+				color:#ffffff;
+				font-size:17px;
+				line-height:32px;
+				text-align:left;
+
+			}
+			#footer .fl ul li a{
+				color:#ffffff;
+			}
+			#footer .fl p{
+				margin-top:60px;
+			}
+
+			#footer .fr{
+				width:195px;
+				height:100%;
+				overflow:hidden;
+				padding-top:19px;
+			}
+		</style>
+		<div id="footer">
+			<div class="contentBar">
+				<div class="fl">
+					<ul>
+						<li>友情链接</li>
+						<li>联系电话</li>
+						<li>电子邮箱</li>
+						<li>通讯地址</li>
+						<li><a href="#" target="_blank">北京市政协网</a></li>
+						<li>010-1234567</li>
+						<li>xx@xx.net</li>
+						<li>通讯地址通讯地址通讯地址</li>
+					</ul>
+					<p>未经人民政协网协议授权，请勿转载或建立镜像，违者依法必究&nbsp;&nbsp;举报热线：010-88146805&nbsp;13269896565</p>
+				</div>
+				<div class="fr">
+					<img src="/images/2017zt/20170608wyhkt/index-img/QR_right.png" alt="">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

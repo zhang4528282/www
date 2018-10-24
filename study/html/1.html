@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div id="box">
+		{{msg}}
+		<br>
+		<input type="text" v-model="msg">
+		<br>
+		<input type="text" v-model="msg1">
+		<br>
+		<ul>
+			<li v-for="(value,index) in arr">
+				{{value}} {{index}}
+			</li>
+		</ul>
+		<ol>
+			<li v-for="(pp,index) in json">
+				{{pp}}{{index}}
+			</li>
+		</ol>
+		{{arr}}
+		<br>
+		{{json}}
+		<br>
+		<input type="button" value="按钮" v-on:click="writ()">
+		<input type="button" value="添加" v-on:mouseover="add()" v-on:mouseout="cut()">
+		<input type="button" value="消失" v-on:click="show()">
+		<div id="wrap" v-show="a"></div>
+		
+	</div>
+	<script>
+		window.onload = function(){
+			var bo = new Vue({
+				el:'#box',	//选择器 使用范围
+				data(){		//data里面存储数据、属性
+					return{
+						msg:'this is my first helloWorld',
+						msg1:'zhjq',
+						arr:['apple','pen','banana','orange','pear'],
+						json:{a:'foot',b:'hand',c:'ear'},
+						a:true
+					}
+					
+				},
+				methods:{	//methods中放方法、函数、function、事件
+
+					writ:function(){
+						alert(this.arr);
+
+					},
+					add:function(){
+						this.arr.push('car');
+					},
+					cut:function(){
+						this.arr.pop('car');
+					},
+					show:function(){
+						this.a = false;
+					}
+						
+				}
+			})
+		}
+	</script>
+	<style>
+		#wrap{
+			width:200px;
+			height:200px;
+			background-color:yellowgreen;
+			margin:0px auto;
+		}
+	</style>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>article.title——人民政协网</title>
+        <style>
+            *{
+                font-family:"微软雅黑","Microsoft Yahei","SimSun","宋体","Arial Narrow";
+                border:none;
+                margin:0px;
+                padding:0px;
+                letter-spacing:0;
+                font-weight:normal;
+                /*                font-size:0px;*/
+            }
+            /*
+            p{
+            text-indent: 2em;
+            }
+            */
+            b,strong{
+                font-weight:bold;
+            }
+            ul,ol,li{
+                list-style:none;
+                list-style-position:inside;
+            }
+            a{
+                text-decoration:none;
+                cursor:pointer;
+            }
+            #header,#body,#footer{
+                width:100%;
+                position:relative;
+                overflow:hidden;
+            }
+            .contentBar{
+                width:1024px;
+                min-height:1px;
+                margin:0 auto;
+                position:relative;
+                /*                background-color:red;*/
+            }
+            .fullBar{
+                min-height:1px;
+                width:100%;
+                margin:0 auto;
+                position:relative;
+                /*                background-color: yellow;*/
+            }
+            .fl{
+                float:left;
+            }
+            .fr{
+                float:right;
+            }
+            .clearfix:after{
+                content:".";
+                display:block;
+                height:0;
+                clear:both;
+                visibility:hidden
+            }
+
+            .clearfix {
+                clear: both;
+            }
+            .inline{
+                display:inline-block;
+                display:-moz-inline-block;
+                zoom:1;
+                *display:inline;
+                overflow:hidden;
+            }
+            .xiang{
+                color:#de0000;
+            }
+        </style>
+        <script src="../../js/getByclass.js"></script>
+        <script src="../../js/moveGood.js"></script>
+        <script src="../../js/jquery-1.8.3.min.js"></script>
+        <script src="http://www.rmzxb.com.cn/js/jquery-1.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--   头部-->
+        <style>
+            #header{
+                height:auto;
+            }
+            #header .headerImg{
+                width:100%;
+                height:auto;
+            }
+        </style>
+        <div id="header">
+            <img class="headerImg" src="../../images/2018zt/20180303qglh/list/header.jpg" alt="">
+        </div>
+        <!--    中间内容区域-->
+        <div id="body">
+            <div class="contentBar">
+                <!--               专题导航-->
+                <style>
+                    .nav{
+                        width:100%;
+                        height:30px;
+                        line-height:30px;
+                        overflow:hidden;
+                        color:#e04045;
+                        text-align: left;
+                        margin-top:34px;
+                        margin-bottom: 26px;
+                    }
+                    .nav a{
+                        color:#e04045;
+                    }
+                    .title{
+                        width:1024px;
+                        height:46px;
+                        overflow: hidden;
+                        background-image: url("../../images/2018zt/20180303qglh/list/yingxing.jpg");
+                        background-repeat: no-repeat;
+                    }
+                </style>
+                <div class="nav">
+                    <a href="">专题</a>&gt;<a href="">影像</a>
+                </div>
+                <div class="title"></div>
+                
+                <!--图片列表矩阵-->
+                <style>
+                    #imglist{
+                        width:1024px;
+                        height:auto;
+                        padding-bottom: 28px;
+                        background-color:#ededef;
+                        overflow:hidden;
+                    }
+                    #imglist a{
+                        display:block;
+                        float:left;
+                        width:296px;
+                        height:234px;
+                        overflow:hidden;
+                        padding:28px 22px 0px;
+                        border-bottom: 1px dotted #c6c6c6;
+                    }
+                    #imglist a img{
+                        width:296px;
+                        height:195px;
+                        overflow:hidden;
+                    }
+                    #imglist a h1{
+                        width:100%;
+                        height:39px;
+                        overflow:hidden;
+                        font-size: 16px;
+                        color:#676767;
+                        text-align: center;
+                        line-height: 39px;
+                    }
+                </style>
+                <div id="imglist">
+                    <!--每页显示12块 分页显示-->
+                    <a href="">
+                        <img src="../../images/1.jpg" alt="">
+                        <h1>习近平坚守实体经济落实</h1>
+                    </a>
+                    <a href="">
+                        <img src="../../images/1.jpg" alt="">
+                        <h1>习近平坚守实体经济落实</h1>
+                    </a>
+                    <a href="">
+                        <img src="../../images/1.jpg" alt="">
+                        <h1>习近平坚守实体经济落实</h1>
+                    </a>
+                    <a href="">
+                        <img src="../../images/1.jpg" alt="">
+                        <h1>习近平坚守实体经济落实</h1>
+                    </a>
+                    <a href="">
+                        <img src="../../images/1.jpg" alt="">
+                        <h1>习近平坚守实体经济落实</h1>
+                    </a>
+                    <a href="">
+                        <img src="../../images/1.jpg" alt="">
+                        <h1>习近平坚守实体经济落实</h1>
+                    </a>
+                    <a href="">
+                        <img src="../../images/1.jpg" alt="">
+                        <h1>习近平坚守实体经济落实</h1>
+                    </a>
+                    <a href="">
+                        <img src="../../images/1.jpg" alt="">
+                        <h1>习近平坚守实体经济落实</h1>
+                    </a>
+                    <a href="">
+                        <img src="../../images/1.jpg" alt="">
+                        <h1>习近平坚守实体经济落实</h1>
+                    </a>
+                    <a href="">
+                        <img src="../../images/1.jpg" alt="">
+                        <h1>习近平坚守实体经济落实</h1>
+                    </a>
+                    <a href="">
+                        <img src="../../images/1.jpg" alt="">
+                        <h1>习近平坚守实体经济落实</h1>
+                    </a>
+                    <a href="">
+                        <img src="../../images/1.jpg" alt="">
+                        <h1>习近平坚守实体经济落实</h1>
+                    </a>
+                </div>
+                <!--图片列表矩阵结束-->
+                
+                <!--分页标签 开始 未做-->
+                
+                
+                <!--分页标签结束-->
+                
+                
+            </div>
+        </div>
+        <!--    尾部-->
+        <style>
+            #footer{
+                height:auto;
+            }
+            #footer .footerImg{
+                width:100%;
+                height:auto;
+            }
+        </style>
+        <div id="footer">
+            <img class="footerImg" src="../../images/2018zt/20180303qglh/footer.jpg" alt="">
+        </div>
+    </body>
+</html>

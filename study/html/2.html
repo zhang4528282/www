@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div id="box">
+		<h3>{{msg}}</h3>
+		<input type="text" v-model="msg">
+		<br>
+		<ul>
+			<li v-for="(a,b) in arr">
+				{{a}}&nabla;{{b}}
+			</li>
+		</ul>
+		<hr>
+		<ol>
+			<li v-for="(c,d) in json">
+				{{c}}&nabla;{{d}}
+			</li>
+		</ol>
+		<br>
+		<input type="button" v-on:click="put">
+		
+	</div>
+	<script>
+		window.onload = function(){
+			new Vue({
+				el:'#box',
+				data(){
+					return{
+						msg:'today is funday',
+						arr:['head','body','hand','larg','foot'],
+						json:{jop:'coffee',marry:'colar',mini:'tea',pagi:'ship'}
+					}
+				},
+				methods:{
+					put:function(){
+						this.arr.push('eye');
+					}
+				}
+			})
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../lib/vue.min.js"></script>
+</head>
+<body>
+    <div id="box">
+        <p v-text="msg"></p>
+        <input type="button" value="on" @click = "on">
+        <input type="button" value="off" @click = "off">
+    </div>
+    <script>
+        var vm = new Vue({
+            el : '#box',
+            data : {
+                msg : '今天是个好日子',
+                intervalId : null
+            },
+            methods : {
+                on(){
+                    if(this.intervalId == null){
+                        this.intervalId = setInterval(()=>{
+                            var a = this.msg.substring(0,1);
+                            var b = this.msg.substring(1);
+                            this.msg = b + a;
+                        },300);
+                    }
+                    
+                   
+                },
+                off(){
+                    clearInterval(this.intervalId);
+                    this.intervalId = null;
+                }
+                
+            }
+        })
+    </script>
+</body>
+</html>

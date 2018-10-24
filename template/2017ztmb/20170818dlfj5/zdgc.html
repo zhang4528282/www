@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>人民政协网-砥砺奋进的五年之重大工程</title>
+		<style>
+			*{
+				font-family:"微软雅黑","Microsoft Yahei","SimSun","宋体","Arial Narrow","å¾è½¯é›…é»‘";
+				border:none;
+				margin:0px;
+				padding:0px;
+				letter-spacing:0;
+				font-weight:normal;
+				/*                font-size:0px;*/
+			}
+			body{
+				min-width:1300px;
+			}
+			/*
+			p{
+			text-indent: 2em;
+			}
+			*/
+			b,strong{
+				font-weight:bold;
+			}
+			ul,ol,li{
+				list-style:none;
+				list-style-position:inside;
+			}
+			a{
+				text-decoration:none;
+				cursor:pointer;
+			}
+			#header,#body,#footer{
+				width:100%;
+				position:relative;
+				overflow:hidden;
+			}
+			.contentBar{
+				min-height:1px;
+				width:1244px;
+				margin:0 auto;
+				position:relative;
+				overflow:hidden;
+				/*                background-color:red;*/
+			}
+			.fullBar{
+				min-height:1px;
+				width:100%;
+				margin:0 auto;
+				position:relative;
+				overflow:hidden;
+				/*                background-color: yellow;*/
+			}
+			.autoBar{
+				min-height:1px;
+				width:auto;
+				margin:0 auto;
+				position:relative;
+				overflow:hidden;
+			}
+			.fl{
+				float:left;
+			}
+			.fr{
+				float:right;
+			}
+			.clearfix:after{
+				content:".";
+				display:block;
+				height:0;
+				clear:both;
+				visibility:hidden
+			}
+
+			.clearfix {
+				clear: both;
+			}
+			.inline{
+				display:inline-block;
+				display:-moz-inline-block;
+				zoom:1;
+				*display:inline;
+				overflow:hidden;
+			}
+			#body{
+				background-color:#225689;
+				margin-top:-4px;
+			}
+
+		</style>
+
+		<script src="/js/jquery-1.8.3.min.js"></script>
+		<script src="/js/getByclass.js"></script>
+		<script src="/js/moveGood.js"></script>
+	</head>
+	<body>
+		<!--header style start-->
+		<style>
+			#header{
+				height:auto;
+			}
+			#header .headerImg{
+				width:100%;
+				height:auto;
+			}
+		</style>
+		<!--header style end-->
+		<div id="header">
+			<img src="/images/2017zt/20170817dlfj5/zdgc/header_1900x515.jpg" class="headerImg" alt="砥砺奋进的五年之重大工程">
+		</div>
+
+		<div id="body">
+			
+
+			<!--第二部分开始-->
+			<style>
+				#ct2{
+					margin-top:22px;
+					margin-bottom:26px;
+					background-color:#ffffff;
+					height:540px;
+					overflow:hidden;
+				}
+				#ct2 .ct2left{
+					width:776px;
+					height:435px;
+					margin:50px 22px 0px 36px;
+					float:left;
+				}
+				
+			</style>
+			<div class="contentBar" id="ct2">
+				<!--左边轮播-->
+				<div class="ct2left">
+					
+					<!--轮播图-->
+					<div class="carousel" id="carousel">
+						<!--list-->
+						<div class="imageList" id="imageList">
+							<ul>
+								<li class="first">
+									<a href="/c/2017-03-15/1416989.shtml" target="_blank" title="国务院总理李克强答中外记者问"><img src="/images/1.jpg" alt="国务院总理李克强答中外记者问">
+										<p>
+											国务院总理李克强答中外记者问
+										</p>
+									</a>
+								</li>
+								<li>
+									<a href="/c/2017-03-15/1416840.shtml" target="_blank" title="十二届全国人大五次会议在北京闭幕"><img src="/images/2.jpg" alt="十二届全国人大五次会议在北京闭幕">
+										<p>
+											十二届全国人大五次会议在北京闭幕
+										</p>
+									</a>
+								</li>
+								<li>
+									<a href="/c/2017-03-15/1417893.shtml" target="_blank" title="直击“部长通道”"><img src="/images/3.jpg" alt="直击“部长通道”">
+										<p>
+											直击“部长通道”
+										</p>
+									</a>
+								</li>
+								<li>
+									<a href="/c/2017-03-13/1411128.shtml" target="_blank" title="全国政协十二届五次会议举行闭幕会"><img src="/images/slider-1.jpg" alt="全国政协十二届五次会议举行闭幕会">
+										<p>
+											全国政协十二届五次会议举行闭幕会
+										</p>
+									</a>
+								</li>
+								<li>
+									<a href="/c/2017-03-14/1414466.shtml" target="_blank" title="质检总局就“质量提升”相关问题答记者问"><img src="/images/slider-2.jpg" alt="质检总局就“质量提升”相关问题答记者问">
+										<p>
+											质检总局就“质量提升”相关问题答记者问
+										</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!--
+<div class="circles" id="circles">
+<ol>
+<li class="cur"></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+</div>
+-->
+						<!--左右按钮 隐藏-->
+<!--
+						<div id="leftBtn">&lt;</div>
+						<div id="rightBtn">&gt;</div>
+-->
+					</div>
+					<style>
+						/*轮播*/
+						.carousel{width:776px;height:435px;position:relative;}
+
+						/*      .carousel .m_unit{width:9000px;position:absolute;left:0;top:0;}*/
+						.carousel .imageList ul{list-style:none;font-size:0;}
+						.carousel .imageList ul li{position:absolute;top:0;left:0;opacity:0;filter:alpha(opacity=0);display:none;}
+						.carousel .imageList ul li.first{opacity:1;filter:alpha(opacity=100);display:block;}
+						.carousel .imageList ul li img{width:776px;height:435px;}
+						.carousel .imageList ul li p{    
+							position: absolute;
+							width: 100%;
+							height: 50px;
+							bottom: 0px;
+							left: 0px;
+							line-height: 50px;
+							font-size: 16px;
+							color: #ffffff;
+							background-color: rgba(0, 0, 0, 0.5);
+							opacity: 1;
+							filter: alpha(opacity=70);
+							text-align: left;
+							text-indent: 2rem;
+						}
+
+						.btns a{    position: absolute;
+							width: 36px;
+							height: 56px;
+							top: 50%;
+							margin-top: -20px;
+							background-color: #ffffff;
+							/* border-radius: 50%; */
+							z-index: 999;
+							background-image: url(../../../images/2016zt/20160101mglh/20151231dclhvArr.png);
+							opacity: 0.2;
+							background-size: 75px 150px;}
+						.btns a.rightBtn {
+							right: 0px;
+							background-position: 37px -234px;
+						}
+						.btns a.leftBtn {
+							left: 10px;
+							background-position: 75px -83px;
+						}
+						.carousel:hover .btns a:hover {
+							opacity: 0.6;
+						}
+
+						.carousel:hover .btns a{
+							opacity: 0.3;
+						}
+
+
+						.circles{position: absolute;         
+							bottom: 18px;               
+							right: 10px;                
+							width: 110px;                
+							height: 10px;  }
+						.circles ol{list-style:none;}
+						.circles ol li{    
+							float: left;
+							width: 8px;
+							height: 8px;
+							border-radius:50%;
+							margin-right: 10px;
+							background-color: #ffffff;
+							cursor: pointer;}
+						.circles ol li.cur{background-color:#545454;}
+						#leftBtn{
+							width:50px;
+							height:50px;
+							/*							background-color:aqua;*/
+							position:absolute;
+							left:10px;
+							bottom:0px;
+							z-index:999;
+							font-size:30px;
+							line-height:50px;
+							text-align: center;
+							color:#ffffff;
+							cursor: pointer;
+						}
+						#rightBtn{
+							width:50px;
+							height:50px;
+							/*							background-color:aqua;*/
+							position:absolute;
+							right:10px;
+							bottom:0px;
+							z-index:999;
+							font-size:30px;
+							line-height:50px;
+							text-align: center;
+							color:#ffffff;
+							cursor: pointer;
+						}
+					</style>
+					<script>
+						//给个参考量
+						var timer = null;
+						var idx = 0;
+
+						//自动轮播
+						autoPlay();
+
+						function autoPlay() {
+							clearInterval(timer);
+							timer = setInterval(function() {
+								$("#imageList li").eq(idx).animate({
+									opacity: "0"
+								}, 1000).hide();
+								idx++;
+								if (idx > ($("#imageList li").length - 1)) {
+									idx = 0;
+								}
+								$("#imageList li").eq(idx).animate({
+									opacity: "1"
+								}, 1000).show();
+								changeCur();
+							}, 4000);
+						}
+
+						//鼠标移入移出
+						$("#carousel").mouseenter(function() {
+							clearInterval(timer);
+						}).mouseleave(function() {
+							autoPlay();
+						});
+
+
+						//左右按钮
+						$("#rightBtn").click(function() {
+							$("#imageList li").eq(idx).animate({
+								opacity: "0"
+							}, 1000).hide();
+							idx++;
+							if (idx > ($("#imageList li").length - 1)) {
+								idx = 0;
+							}
+							$("#imageList li").eq(idx).animate({
+								opacity: "1"
+							}, 1000).show();
+							changeCur();
+						});
+
+						$("#leftBtn").click(function() {
+							$("#imageList li").eq(idx).animate({
+								opacity: "0"
+							}, 1000).hide();
+							idx--;
+							if (idx < 0) {
+								idx = $("#imageList li").length - 1;
+							}
+							$("#imageList li").eq(idx).animate({
+								opacity: "1"
+							}, 1000).show();
+							changeCur();
+						});
+
+						//点击小圆点
+						$(".circles ol li").click(function() {
+							$("#imageList li").eq(idx).animate({
+								opacity: "0"
+							}, 1000).hide();
+							idx = $(this).index();
+							$("#imageList li").eq(idx).animate({
+								opacity: "1"
+							}, 1000).show();
+							changeCur();
+						});
+
+						//改变小圆点颜色
+						function changeCur() {
+							$(".circles ol li").attr({
+								class: ""
+							});
+							$(".circles ol li").eq(idx).attr({
+								class: "cur"
+							});
+						}
+					</script>
+
+					<!--焦点轮播图结束-->
+				</div>
+
+				<!--右边列表-->
+				<style>
+					.ct2right{
+						margin-top:8px;
+						width:362px;
+						height:435px;
+						padding-top:42px;
+						padding-bottom:42px;
+						float:left;
+						position:relative;
+						overflow:hidden;
+					}
+					.ct2right .wrap{
+						width:100%;
+						height:100%;
+						overflow:hidden;
+						position:relative;
+					}
+					.ct2right .tbtn{
+						position:absolute;
+						top:0px;
+						left:0px;
+						width:350px;
+						height:22px;
+						background-image: url('/images/2017zt/20170817dlfj5/zdgc/tbtn.jpg');
+						background-repeat: no-repeat;
+					}
+					.ct2right .bbtn{
+						position:absolute;
+						bottom:0px;
+						left:0px;
+						width:350px;
+						height:22px;
+						background-image: url('/images/2017zt/20170817dlfj5/zdgc/bbtn.jpg');
+						background-repeat: no-repeat;
+					}
+					.ct2right ul{
+						position:absolute;
+						top:0px;
+						left:0px;
+						width:362px;
+						height:auto;
+						overflow:hidden;	
+					}
+					.ct2right ul li{
+						width:362px;
+						height:223px;;
+						overflow:hidden;
+						float:left;
+					}
+					.ct2right ul li img{
+						width:362px;
+						height:190px;;
+						overflow:hidden;
+					}
+					.ct2right ul li h1{
+						width:362px;
+						height:26px;
+						line-height:18px;
+						font-size:18px;
+						color:#202020;
+						overflow:hidden;
+					}
+				</style>
+				<div class="ct2right" id="ct2r">
+					<div class="wrap">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="/images/1.jpg" alt="">
+									<h1>1习近平还先后召开文艺工作座谈会</h1>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="/images/2.jpg" alt="">
+									<h1>2习近平还先后召开文艺工作座谈会</h1>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="/images/3.jpg" alt="">
+									<h1>3习近平还先后召开文艺工作座谈会</h1>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a href="javascript:void();" class="tbtn"></a>
+					<a href="javascript:void();" class="bbtn"></a>
+				</div>
+
+			</div>
+			
+			<script>
+				var oCt2r = document.getElementById('ct2r');
+				var oCt2rU = oCt2r.getElementsByTagName('ul')[0];
+				var aCt2rL = oCt2rU.getElementsByTagName('li');
+				oCt2rU.innerHTML = oCt2rU.innerHTML+oCt2rU.innerHTML;
+				/*获取按钮*/
+				var oCt2tbtn = getByClass(oCt2r,'tbtn')[0];
+				var oCt2bbtn = getByClass(oCt2r,'bbtn')[0];
+				/*上移*/
+				function goTop(){
+					if(oCt2rU.offsetTop<-oCt2rU.offsetHeight/2){
+						oCt2rU.style.top = '0px';
+					}
+					oCt2rU.style.top = (oCt2rU.offsetTop-2)+'px';
+				}
+				var XmoveTop = null;
+				oCt2tbtn.onmouseover = function(){
+					
+					clearInterval(XmoveTop);
+					XmoveTop = setInterval(goTop,30);
+				}
+				oCt2tbtn.onmouseout = function(){
+					clearInterval(XmoveTop);
+				}
+				/*下移*/
+				function goBtm(){
+					if(oCt2rU.offsetTop>0){
+						oCt2rU.style.top = (-oCt2rU.offsetHeight/2)+'px';
+					}
+					oCt2rU.style.top = (oCt2rU.offsetTop+2)+'px';
+				}
+				var XmoveDown = null;
+				oCt2bbtn.onmouseover = function(){
+					clearInterval(XmoveDown);
+					XmoveDown = setInterval(goBtm,30);
+				}
+				oCt2bbtn.onmouseout = function(){
+					clearInterval(XmoveDown);
+				}
+
+				
+			</script>
+			<!--第二部分结束-->
+			
+			<!--第三部分开始 大工程巡礼-->
+			<style>
+				#ct3{
+					margin-bottom:30px;
+					padding-top:53px;
+				}
+				#ct3 .maincatalog_center{
+					width:1244px;
+					height:39px;
+					overflow:hidden;
+					background-image: url("/images/2017zt/20170817dlfj5/zdgc/gongcheng.png");
+					background-repeat: no-repeat;
+					position:absolute;
+					top:0;
+					left:50%;
+					transform: translateX(-50%);
+				}
+				
+				#gongcheng{
+					height:508px;
+					overflow:hidden;
+					background-color:#ffffff;
+				}
+				#gongcheng .gong3{
+					width:336px;
+					padding:40px 39px 0px;
+					height:468px;
+					overflow:hidden;
+					float:left;
+				}
+				#gongcheng .gong3 img{
+					width:336px;
+					height:242px;
+					overflow:hidden;
+					margin-bottom:20px;
+				}
+				#gongcheng .gong3 h1{
+					width:336px;
+					height:78px;
+					overflow:hidden;
+					font-size:20px;
+					font-weight: bold;
+					color:#4e4e4e;
+					line-height:1.8rem;
+					border-bottom:1px solid #eeeeee;
+				}
+				#gongcheng .gong3 ul{
+					width:336px;
+					height:116px;
+					overflow:hidden;
+				}
+				#gongcheng .gong3 ul li{
+					width:100%;
+					height:44px;
+					
+				}
+				#gongcheng .gong3 ul li a{
+					text-align: center;
+					font-size:18px;
+					line-height:44px;
+					color:#4e4e4e;
+				}
+			</style>
+
+
+			<div class="autoBar" id="ct3">
+				<a href="#" target="_blank" title="#">
+					<div class="maincatalog_center"></div>
+				</a>
+				<div class="contentBar" id="gongcheng">
+					<div class="gong3">
+						<a href="#">
+							<img src="/images/slider-1.jpg" alt="">
+							<h1>习近平对九寨沟7.0级地震作出重要指
+								要求迅速组织</h1>
+						</a>
+						<ul>
+							<li>
+								<a href="">地震发生后中共中央总书记习近平高度</a>
+							</li>
+							<li>
+								<a href="">国务院抗震救灾指挥部组成的工作组</a>
+							</li>
+						</ul>
+					</div>
+					<div class="gong3">
+						<a href="#">
+							<img src="/images/slider-1.jpg" alt="">
+							<h1>习近平对九寨沟7.0级地震作出重要指
+								要求迅速组织</h1>
+						</a>
+						<ul>
+							<li>
+								<a href="">地震发生后中共中央总书记习近平高度</a>
+							</li>
+							<li>
+								<a href="">国务院抗震救灾指挥部组成的工作组</a>
+							</li>
+						</ul>
+					</div>
+					<div class="gong3">
+						<a href="#">
+							<img src="/images/slider-1.jpg" alt="">
+							<h1>习近平对九寨沟7.0级地震作出重要指
+								要求迅速组织</h1>
+						</a>
+						<ul>
+							<li>
+								<a href="">地震发生后中共中央总书记习近平高度</a>
+							</li>
+							<li>
+								<a href="">国务院抗震救灾指挥部组成的工作组</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--第三部分结束-->
+
+			<!--第四部分开始 热议解读-->
+			<style>
+				#ct4{
+					margin-bottom:30px;
+					padding-top:53px;
+				}
+				#ct4 .maincatalog_center{
+					width:1244px;
+					height:39px;
+					overflow:hidden;
+					background-image: url("/images/2017zt/20170817dlfj5/zdgc/jiedu.png");
+					background-repeat: no-repeat;
+					position:absolute;
+					top:0;
+					left:50%;
+					transform: translateX(-50%);
+				}
+				#jiedu ul{
+					width:100%;
+					height:auto;
+					overflow:hidden;
+				}
+				#jiedu ul li{
+					width:100%;
+					height:218px;
+					border-bottom:1px dashed #69c8ff;
+				}
+				#jiedu ul li h1{
+					width:100%;
+					height:48px;
+					line-height:48px;
+					font-size:28px;
+					color:#ffffff;
+					overflow:hidden;
+				}
+				#jiedu ul li img{
+					width:250px;
+					height:135px;
+					margin-right:22px;
+					float:left;
+				}
+				#jiedu ul li .txtBox{
+					width:972px;
+					height:135px;
+					float:left;
+				}
+				#jiedu ul li .txtBox p{
+					width:100%;
+					height:55px;
+					overflow:hidden;
+					color:#ffffff;
+					font-size:16px;
+					line-height:1.6rem;
+				}
+				#jiedu ul li .txtBox .xiang{
+					color:#b51824;
+				}
+				#jiedu ul li .txtBox .timer{
+					float:left;
+					font-size:12px;
+					color:#69c8ff;
+				}
+
+
+			</style>
+
+
+			<div class="autoBar" id="ct4">
+				<a href="#" target="_blank" title="#">
+					<div class="maincatalog_center"></div>
+				</a>
+				<div class="contentBar" id="jiedu">
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+								<h1>香港连续第二年获评为全球最具竞争力经济体</h1>
+								<br>
+								<img src="#" alt="">
+								<div class="txtBox">
+									<p>
+										新华社北京6月25日电　中共中央总书记、国家主席、中央军委主席习近平将于6月29日至7月1日赴香港，出席庆祝香港回归祖国20周年大会暨香港特别行政区第五届政府就职典礼，并视察香港特别行政区。
+<!--										<span class="xiang">[详细]</span>-->
+									</p>
+									<br>
+									<span class="timer">2017年6月23日08:00</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<h1>香港连续第二年获评为全球最具竞争力经济体</h1>
+								<br>
+								<!--								<img src="#" alt="">-->
+								<div class="txtBox">
+									<p>
+										新华社北京6月25日电　中共中央总书记、国家主席、中央军委主席习近平将于6月29日至7月1日赴香港，出席庆祝香港回归祖国20周年大会暨香港特别行政区第五届政府就职典礼，并视察香港特别行政区。
+									</p>
+									<br>
+									<span class="timer">2017年6月23日08:00</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<h1>香港连续第二年获评为全球最具竞争力经济体</h1>
+								<br>
+								<img src="#" alt="">
+								<div class="txtBox">
+									<p>
+										新华社北京6月25日电　中共中央总书记、国家主席、中央军委主席习近平将于6月29日至7月1日赴香港，出席庆祝香港回归祖国20周年大会暨香港特别行政区第五届政府就职典礼，并视察香港特别行政区。
+										<span class="xiang">[详细]</span>
+									</p>
+									<br>
+									<span class="timer">2017年6月23日08:00</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<!--第四部分结束-->
+
+		</div>
+
+		<!--footer style start-->
+		<style>
+			#footer{
+				height:auto;
+			}
+			#footer .footerImg{
+				width:100%;
+				height:auto;
+			}
+		</style>
+		<!--footer style end-->
+		<div id="footer">
+			<img src="/images/2017zt/20170609fzbcb/footer.jpg" class="footerImg" alt="砥砺奋进的五年之重大工程">
+		</div>
+	</body>
+</html>

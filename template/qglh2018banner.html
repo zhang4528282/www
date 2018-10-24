@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>banner——人民政协网</title>
+        <style>
+            *{
+                font-family:"微软雅黑","Microsoft Yahei","SimSun","宋体","Arial Narrow";
+                border:none;
+                margin:0px;
+                padding:0px;
+                letter-spacing:0;
+                font-weight:normal;
+                /*                font-size:0px;*/
+            }
+            /*
+            p{
+            text-indent: 2em;
+            }
+            */
+            b,strong{
+                font-weight:bold;
+            }
+            ul,ol,li{
+                list-style:none;
+                list-style-position:inside;
+            }
+            a{
+                text-decoration:none;
+                cursor:pointer;
+            }
+            #header,#body,#footer{
+                width:100%;
+                position:relative;
+                overflow:hidden;
+            }
+            .contentBar{
+                width:1024px;
+                min-height:1px;
+                margin:0 auto;
+                position:relative;
+                /*                background-color:red;*/
+            }
+            .fullBar{
+                min-height:1px;
+                width:100%;
+                margin:0 auto;
+                position:relative;
+                /*                background-color: yellow;*/
+            }
+            .fl{
+                float:left;
+            }
+            .fr{
+                float:right;
+            }
+            .clearfix:after{
+                content:".";
+                display:block;
+                height:0;
+                clear:both;
+                visibility:hidden
+            }
+
+            .clearfix {
+                clear: both;
+            }
+            .inline{
+                display:inline-block;
+                display:-moz-inline-block;
+                zoom:1;
+                *display:inline;
+                overflow:hidden;
+            }
+            .xiang{
+                color:#de0000;
+            }
+        </style>
+        <script src="../../js/getByclass.js"></script>
+        <script src="../../js/moveGood.js"></script>
+        <script src="../../js/jquery-1.8.3.min.js"></script>
+        <script src="http://www.rmzxb.com.cn/js/jquery-1.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--   头部-->
+        <style>
+            #header{
+                width:100%;
+                height:180px;
+                overflow:hidden;
+                background-color:firebrick;
+            }
+            
+        </style>
+        <div id="header">
+            
+        </div>
+        <!--    中间内容区域-->
+        <div id="body">
+            <style>
+                #banner_qglh{
+                    width:100%;
+                    min-height:1080px;
+                    background-image: url("/images/qglh2018banner/BG03011.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    overflow:hidden;
+                    position: relative;
+                }
+                #banner_qglh .headerImg{
+                    width:1024px;
+                    height:355px;
+                    overflow:hidden;
+                    margin:0px auto;
+                }
+                #bannerCont{
+                    width:1024px;
+/*                    height:722px;*/
+                    background-color:#bb1f20;
+                    position: absolute;
+                    left:50%;
+                    bottom:0px;
+                    margin-left:-512px;
+                    overflow:hidden;
+                    z-index: 1;
+                }
+            </style>
+            <a href="#">
+                <object>
+                    <div id="banner_qglh">
+                        <img class="headerImg" src="/images/qglh2018banner/zi-0301111.png" alt="">
+                        <div class="contentBar" id="bannerCont">
+                            <!--专题头条-->
+                            <style>
+                                .lh_tt{
+                                    width:100%;
+                                    height:86px;
+                                    line-height:100px;
+                                    font-size:34px;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    color: #ffffff;
+                                    overflow:hidden;
+                                    margin:0px;
+                                }
+                            </style>
+                            <a href="">
+                                <h1 class="lh_tt">大国新时代全国两会人民政协报道</h1>
+                            </a>
+                            <!--头条相关-->
+                            <style>
+                                .lh_ttxg{
+                                    width:100%;
+                                    height:31px;
+                                    overflow:hidden;
+                                    font-size:14px;
+                                    margin-bottom:20px;
+                                }
+                                .lh_ttxg h3{
+                                    width:100%;
+                                    height:31px;
+                                    line-height:31px;
+                                    overflow:hidden;
+                                    text-align:center;
+                                    margin:0px;
+                                }
+                                .lh_ttxg h3 a{
+                                    color:#ffffff;
+                                    font-size:14px;
+                                }
+                            </style>
+                            <div class="lh_ttxg">
+                                <h3>
+                                    <a href="">【写在十二届全国人大五次会议胜利闭幕之际】  </a>
+                                    <a href="">【李克强主持国务院常务会议 部署优化营商环境】</a>
+                                    <a href="">【继往开来，开启新的伟大征程——2017年全国两会的】</a>
+                                </h3>
+                            </div>
+                            
+                            <!--焦点-->
+                            <div class="jiaodian" id="jiaodian">
+                                <style>
+                                   #jiaodian{
+                                       width:529px;
+                                       height:310px;
+                                       overflow:hidden;
+                                       float:left;
+                                   }
+                                   
+                                   /*焦点图轮播样式开始*/
+                                   #picBox{
+                                       width:529px;
+                                       height:310px;
+                                       overflow:hidden;
+                                   }
+
+
+                                   #jiaodian .slides-box {
+                                       width: 529px;
+                                       height: 310px;
+                                       margin: auto;
+                                       overflow: hidden;
+                                       position:relative;
+                                   }
+                                   #jiaodian .slides {
+                                       position: relative;
+                                       padding:0px;
+                                       height: 100%;
+                                       width: 100%;
+                                       margin: auto;
+                                       float: left;
+                                   }
+                                   #jiaodian .slides li {
+                                       position: absolute;
+                                       width:  100%;
+                                       height: 100%;
+                                   }
+                                   #jiaodian .slides li img{
+                                       display: block;
+                                       width: 100%;
+                                       height:100%;
+                                       margin: auto;
+                                   }
+                                   #jiaodian .slides li p{
+                                       position:absolute;
+                                       bottom:0px;
+                                       left:0px;
+                                       display: block;
+                                       width: 664px;
+                                       height:54px;
+                                       padding-left:26px;
+                                       margin: auto;
+                                       line-height:54px;
+                                       font-size:16px;
+                                       color:#ffffff;
+                                       background-color:rgba(0,0,0,0.5);
+                                   }
+                                   #jiaodian .prev,#jiaodian .next {
+                                       position: absolute;
+                                       z-index: 99;
+                                       top: 50%;
+                                       margin-top: -40px;
+                                       left: 0;
+                                       height: 70px;
+                                       width: 30px;
+                                       color: #fff;
+                                       cursor: pointer;
+                                       background-color: #000;
+                                       opacity: .5;
+                                   }
+                                   #jiaodian .prev:hover,#jiaodian .next:hover{
+                                       opacity: .7;
+                                   }
+                                   #jiaodian .prev{
+                                       background-image: url("data:image/gif;base64,R0lGODlhHgBGAIABAP///////yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMwMTQgNzkuMTU2Nzk3LCAyMDE0LzA4LzIwLTA5OjUzOjAyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjAzODAxMTc0MDcyMDY4MTE5MkIwQTM1OTQ0MTQ3NDEwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjY0M0UwQjkxMEQ3RTExRTVCOTJFQkFCNkU5QTFCNUE5IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjY0M0UwQjkwMEQ3RTExRTVCOTJFQkFCNkU5QTFCNUE5IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OEFCRDY2OUNGM0REMTFFMkFCOTg5QTlBMkVEQjFBRjAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEFCRDY2OURGM0REMTFFMkFCOTg5QTlBMkVEQjFBRjAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQBAAABACwAAAAAHgBGAAACUIyPqcvtD6OctNqLs968+w+G4kiWIYB6aMqtrOYCrTuv9ZvFt7zpPf2zBXEY31Al3CGTQ56yY2wuiTng8yqFWo9Lk/cLDovH5LL5jE6r15oCADs=");
+                                   }
+                                   #jiaodian .next {
+                                       left: auto;
+                                       right: 0;
+                                       background-image: url("data:image/gif;base64,R0lGODlhHgBGAIABAP///////yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMwMTQgNzkuMTU2Nzk3LCAyMDE0LzA4LzIwLTA5OjUzOjAyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjAzODAxMTc0MDcyMDY4MTE5MkIwQTM1OTQ0MTQ3NDEwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjg0QTYyN0Y0MEQ3RTExRTVBMTAyQURBQ0QxRjY2NTc1IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjg0QTYyN0YzMEQ3RTExRTVBMTAyQURBQ0QxRjY2NTc1IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OEFCRDY2OUNGM0REMTFFMkFCOTg5QTlBMkVEQjFBRjAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEFCRDY2OURGM0REMTFFMkFCOTg5QTlBMkVEQjFBRjAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQBAAABACwAAAAAHgBGAAACV4yPqcvtD6OctNqLs968+w+G4kiWFIB+aNqtLOcCXjy79Xq/G93aPf7TaXgwX1GYMQ6VGGKSeXE2oRZplFqxVrEn7kSb9X6BR5P5jE6r1+y2+w2Py+fmAgA7");
+                                   }
+                                   #jiaodian .pagination{
+                                       position: absolute;
+                                       bottom: 5px;
+                                       z-index: 99;
+                                   }
+                                   #jiaodian .pagination li{
+                                       padding: 5px 3px;
+                                       float: left;
+                                   }
+                                   #jiaodian .pagination li a{
+                                       display: block;
+                                       width: 10px;
+                                       height: 10px;
+                                       line-height: 10px;
+                                       /*    border-radius: 10px;*/
+                                       background: #fff;
+                                       /*    是否显示页码数字 调节字体颜色*/
+                                       color: rgba(0,0,0,0);
+                                       text-align: center;
+                                       font-family: Arial;
+                                       text-decoration: none;
+                                   }
+                                   #jiaodian .pagination .active{
+                                       background:#c10805;
+                                   }
+                                   /*焦点图轮播样式结束*/
+                                </style>
+                                
+                                <div class="slides-box">
+                                    <ul class="slides">
+                                        <li>
+                                            <a href="javascript:void();">
+                                                <img src="../../images/1.jpg" alt="">
+                                                <p>11全国政协第二十一次常委会议专题</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void();">
+                                                <img src="../../images/2.jpg" alt="">
+                                                <p>22全国政协第二十一次常委会议专题</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void();">
+                                                <img src="../../images/3.jpg" alt="">
+                                                <p>33全国政协第二十一次常委会议专题</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void();">
+                                                <img src="../../images/3.jpg" alt="">
+                                                <p>33全国政协第二十一次常委会议专题</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void();">
+                                                <img src="../../images/3.jpg" alt="">
+                                                <p>33全国政协第二十一次常委会议专题</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <script>
+                                    (function($) {
+                                        $.fn.poposlides = function(options) {
+
+                                            var settings = $.extend({
+                                                auto: true, //自动播放
+                                                nav: true, //切换按钮
+                                                playspeed: 3500, //自动播放速度
+                                                fadespeed: 500, //淡入淡出速度
+                                                loop: true, //循环播放
+                                                pagination: true, //页码显示
+                                                pagecenter: true, //页码居右
+                                                prev: ".prev", //上一页按钮
+                                                next: ".next" //下一页按钮
+                                            }, options);
+
+                                            return this.each(function() {
+
+                                                var $this = $(this),
+                                                    slide = $this.children(),
+                                                    index = 0;
+                                                len = slide.length - 1,
+                                                    slideWidth = $this.width(),
+                                                    prev = settings.prev,
+                                                    next = settings.next;
+
+                                                //初始隐藏其它页，显示当前页
+                                                if (!navigator.userAgent.match(/mobile/i)) {
+                                                    slide.hide();
+                                                    slide.eq(index).show();
+                                                } else {
+                                                    slide.css({
+                                                        "opacity": "0"
+                                                    });
+                                                    slide.eq(index).css({
+                                                        "opacity": "1"
+                                                    });
+                                                };
+
+                                                //显示当前页
+                                                slideFadeIn = function() {
+                                                    if (!navigator.userAgent.match(/mobile/i)) {
+                                                        slide.fadeOut(settings.fadespeed);
+                                                        slide.eq(index).fadeIn(settings.fadespeed);
+                                                    } else {
+                                                        slide.css({
+                                                            "opacity": "0",
+                                                            "-webkit-transition": settings.fadespeed / 1000 + "s"
+                                                        });
+                                                        slide.eq(index).css({
+                                                            "opacity": "1",
+                                                            "-webkit-transition": settings.fadespeed / 1000 + "s"
+                                                        });
+                                                    };
+                                                };
+
+                                                //翻页加，判断是否循环
+                                                slideAdd = function() {
+                                                    if (settings.loop) {
+                                                        index == len ? index = 0 : index++;
+                                                    } else {
+                                                        index == len ? index = len : index++;
+                                                    };
+                                                    slideFadeIn();
+                                                };
+
+                                                //翻页减，判断是否循环
+                                                slideMinus = function() {
+                                                    if (settings.loop) {
+                                                        index == 0 ? index = len : index--;
+                                                    } else {
+                                                        index == 0 ? index = 0 : index--;
+                                                    };
+                                                    slideFadeIn();
+                                                };
+
+                                                //页码
+                                                pagnation = function() {
+                                                    var $paginationBox = $("<ul class='pagination'></ul>");
+                                                    var paginationStr = "";
+                                                    for (var i = 1; i <= len + 1; i++) {
+                                                        paginationStr += "<li><a href='javascript:void(0)'>" + i + "</a>";
+                                                    }
+                                                    $paginationBox.append(paginationStr);
+                                                    $this.after($paginationBox);
+
+                                                    $(".pagination li a").eq(index).addClass("active");
+
+                                                };
+
+                                                //当前页码
+                                                pageActive = function() {
+                                                    $(".pagination li a").removeAttr("class")
+                                                    $(".pagination li a").eq(index).addClass("active");
+                                                }
+
+                                                //是否需要左右导航图标
+                                                if (settings.nav) {
+                                                    var navStr = "<a href='javascript:void(0)' class=" + prev.substring(1) + "></a>" +
+                                                        "<a href='javascript:void(0)' class=" + next.substring(1) + "></a>";
+                                                    $this.after(navStr);
+
+                                                    $(next).click(function() {
+                                                        slideAdd();
+                                                    });
+
+                                                    $(prev).click(function() {
+                                                        slideMinus();
+                                                    })
+                                                };
+
+                                                //是否需要页码
+                                                if (settings.pagination) {
+                                                    pagnation();
+                                                    $(prev).click(function() {
+                                                        pageActive();
+                                                    });
+                                                    $(next).click(function() {
+                                                        pageActive();
+                                                    });
+
+                                                    $(".pagination li").click(function() {
+                                                        var idx = $(this).index() - 1;
+                                                        index = idx;
+                                                        slideAdd();
+                                                        pageActive();
+                                                    });
+                                                };
+
+                                                //页码居右
+                                                if (settings.pagecenter) {
+                                                    var pw = $(".pagination").width();
+                                                    $(".pagination").css({
+                                                        "position": "absolute",
+                                                        "right": "20px",
+                                                        "bottom": "15px",
+                                                        "margin-left": -pw / 2,
+                                                        "z-index": "99"
+                                                    })
+                                                };
+
+                                                //是否自动播放
+                                                if (settings.auto) {
+                                                    var play = setInterval(function() {
+                                                        slideAdd();
+                                                        pageActive();
+                                                    }, settings.playspeed);
+                                                    $this.nextAll().hover(function() {
+                                                        clearInterval(play);
+                                                    },
+                                                                          function() {
+                                                        play = setInterval(function() {
+                                                            slideAdd();
+                                                            pageActive();
+                                                        }, settings.playspeed);
+                                                    });
+                                                };
+
+                                            });
+                                        };
+
+                                    })(jQuery);
+
+                                    $(".slides").poposlides();
+
+                                </script>
+                            </div>
+                            
+                            <!--要闻 5条-->
+                            <style>
+                                #yaowen{
+                                    width:495px;
+                                    height:310px;
+                                    background-color:#ea1f21;
+                                    overflow:hidden;
+                                    float:right;
+                                    
+                                }
+                                #yaowen a{
+                                    display: block;
+                                    width:465px;
+                                    padding:0px 15px;
+                                    height:61px;
+                                    border-bottom:1px solid #bb1f20;
+                                    overflow:hidden;
+                                    text-align: left;
+                                    line-height: 61px;
+                                    font-size: 18px;
+                                    color: #ffffff;
+                                }
+                            </style>
+                            <div id="yaowen">
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                            </div>
+                            
+                            
+                            
+                            <!--会场连线 6条-->
+                            <style>
+                                #lianxian{
+                                    width:670px;
+                                    height:141px;
+                                    overflow:hidden;
+                                    float:left;
+                                }
+                                #lianxian .lianxian{
+                                    display: inline-block;
+                                    width:23px;
+                                    height:84px;
+                                    line-height:21px;
+                                    padding:28px 7px;
+                                    background-color: #f73f41;
+                                    text-align: center;
+                                    font-size: 13px;
+                                    color: #ffffff;
+                                    border-right:1px solid #bb1f20;
+                                    border-bottom:1px solid #bb1f20;
+                                    overflow:hidden;
+                                    float:left;
+                                }
+                                #lianxian a{
+                                    display:inline-block;
+                                    width:315px;
+                                    height:46px;
+                                    border-right:1px solid #bb1f20;
+                                    border-bottom:1px solid #bb1f20;
+                                    background-color:#e93133;
+                                    overflow:hidden;
+                                    float:left;
+                                    overflow: hidden;
+                                    text-align: left;
+                                    text-indent: 1rem;
+                                    line-height: 46px;
+                                    color:#ffffff;
+                                }
+                            </style>
+                            <div id="lianxian">
+                                <div class="lianxian">会场连线</div>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                            </div>
+                            
+                            <!--委员会客厅-->
+                            <style>
+                                #wyhkt{
+                                    width:354px;
+                                    height:187px;
+                                    overflow:hidden;
+                                    float:right;
+                                }
+                                #wyhkt .wyhkt{
+                                    display: inline-block;
+                                    width:23px;
+                                    height:104px;
+                                    line-height:21px;
+                                    padding:41px 7px;
+                                    background-color: #fe7008;
+                                    text-align: center;
+                                    font-size: 13px;
+                                    color: #ffffff;
+                                    border-bottom:1px solid #bb1f20;
+                                    overflow:hidden;
+                                    position: relative;
+                                    float:left;
+                                }
+                                #wyhkt a{
+                                    display: inline-block;
+                                    width:317px;
+                                    height:186px;
+                                    float:right;
+                                    overflow:hidden;
+                                    position: relative;
+                                }
+                                #wyhkt a img{
+                                    width:100%;
+                                    height: 100%;
+                                    overflow: hidden;
+                                }
+                                #wyhkt a i{
+                                    width:44px;
+                                    height:44px;
+                                    overflow:hidden;
+                                    position: absolute;
+                                    top:50%;
+                                    left:50%;
+                                    margin-top:-22px;
+                                    margin-left:-22px;
+                                    background-image: url("http://www.rmzxb.com.cn/images/2018zt/20180303qglh/playBtn.png");
+                                }
+                            </style>
+                            <div id="wyhkt">
+                                <div class="wyhkt">委员会客厅</div>
+                                <a href="">
+                                    <img src="/img/1.jpg" alt="">
+                                    
+                                    <i></i>
+                                </a>
+                            </div>
+                            
+                            <!--读原创 6条-->
+                            <style>
+                                #yuanchuang{
+                                    width:670px;
+                                    height:141px;
+                                    overflow:hidden;
+                                    float:left;
+                                }
+                                #yuanchuang .yuanchuang{
+                                    display: inline-block;
+                                    width:23px;
+                                    height:64px;
+                                    line-height:21px;
+                                    padding:38px 7px;
+                                    background-color: #fe7008;
+                                    text-align: center;
+                                    font-size: 13px;
+                                    color: #ffffff;
+                                    border-right:1px solid #bb1f20;
+                                    border-bottom:1px solid #bb1f20;
+                                    overflow:hidden;
+                                    float:left;
+                                }
+                                #yuanchuang a{
+                                    display:inline-block;
+                                    width:315px;
+                                    height:46px;
+                                    border-right:1px solid #bb1f20;
+                                    border-bottom:1px solid #bb1f20;
+                                    background-color:#fd832a;
+                                    overflow:hidden;
+                                    float:left;
+                                    overflow: hidden;
+                                    text-align: left;
+                                    text-indent: 1rem;
+                                    line-height: 46px;
+                                    color:#ffffff;
+                                }
+                            </style>
+                            <div id="yuanchuang">
+                                <div class="yuanchuang">读原创</div>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                                <a href="java">
+                                    我们要牢记人民对美好生活的向往就是我们的奋斗目标
+                                </a>
+                            </div>
+                            
+                            
+                            <!--跟着委员上两会 百姓有问题告诉你-->
+                            <style>
+                                #genbai{
+                                    width:354px;
+                                    height:94px;
+                                    border-top:1px solid #bb1f20;
+                                    overflow: hidden;
+                                    float:right;
+                                }
+                                #genweiyuan{
+                                    display: inline-block;
+                                    width: 176px;
+                                    height:94px;
+                                    overflow:hidden;
+                                    background-image: url("/images/qglh2018banner/genweiyuan.jpg");
+                                    border-right:1px solid #bb1f20;
+                                    float:left;
+                                }
+                                #baixing{
+                                    display: inline-block;
+                                    width: 176px;
+                                    height:94px;
+                                    overflow:hidden;
+                                    background-image: url("/images/qglh2018banner/baixing.jpg");
+                                    float:left;
+                                }
+                            </style>
+                            <div id="genbai">
+                                <a href="">
+                                    <div id="genweiyuan"></div>
+                                </a>
+                                <a href="">
+                                    <div id="baixing"></div>
+                                </a>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div> 
+                </object>
+            </a>
+            <script>
+                var oBanner = document.getElementById('banner_qglh');
+                var windH = document.documentElement.clientHeight;
+//                console.log(windH);
+                oBanner.style.height = windH+'px';
+            </script>
+            <!--滚动条滚动 180为滚动过的高度-->
+            <script>
+                function startTo(){
+                    var timer = null;
+                    var speed = 0;
+                    clearInterval(timer);
+                    timer = setInterval(function(){
+                        if(speed >= 180){
+                            clearInterval(timer);
+                        }else{
+                            speed += 10;
+                            window.scrollTo(0,speed);
+                        }
+                    },30);
+                }
+               
+                    setTimeout(startTo,1000);
+                
+            </script>
+
+        </div>
+
+    </body>
+</html>

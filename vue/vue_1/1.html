@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 导入vue包 -->
+    <script src="../lib/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{ msg }}</p>
+    </div>
+   <script>
+    //    创建一个vue实例
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            msg: 'hello vue'//通过vue提供的指令将数据渲染到页面，不提倡手动操作DOM元素
+
+        }
+    })
+   </script> 
+</body>
+</html>

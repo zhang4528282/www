@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>特别策划——人民政协网</title>
+        <style>
+            *{
+                font-family:"微软雅黑","Microsoft Yahei","SimSun","宋体","Arial Narrow";
+                border:none;
+                margin:0px;
+                padding:0px;
+                letter-spacing:0;
+                font-weight:normal;
+                /*                font-size:0px;*/
+            }
+            /*
+            p{
+            text-indent: 2em;
+            }
+            */
+            b,strong{
+                font-weight:bold;
+            }
+            ul,ol,li{
+                list-style:none;
+                list-style-position:inside;
+            }
+            a{
+                text-decoration:none;
+                cursor:pointer;
+            }
+            #header,#body,#footer{
+                width:100%;
+                position:relative;
+                overflow:hidden;
+            }
+            .contentBar{
+                width:1024px;
+                min-height:1px;
+                margin:0 auto;
+                position:relative;
+                overflow:hidden;
+                /*                background-color:red;*/
+            }
+            .fullBar{
+                min-height:1px;
+                width:100%;
+                margin:0 auto;
+                position:relative;
+                overflow:hidden;
+                /*                background-color: yellow;*/
+            }
+            .fl{
+                float:left;
+            }
+            .fr{
+                float:right;
+            }
+            .clearfix:after{
+                content:".";
+                display:block;
+                height:0;
+                clear:both;
+                visibility:hidden
+            }
+
+            .clearfix {
+                clear: both;
+            }
+            .inline{
+                display:inline-block;
+                display:-moz-inline-block;
+                zoom:1;
+                *display:inline;
+                overflow:hidden;
+            }
+            .xiang{
+                color:#de0000;
+            }
+        </style>
+        <script src="../../js/getByclass.js"></script>
+        <script src="../../js/moveGood.js"></script>
+        <script src="../../js/jquery-1.8.3.min.js"></script>
+        <script src="http://www.rmzxb.com.cn/js/jquery-1.8.3.min.js"></script>
+        <script src="../../js/jquery-1.11.0.min.js"></script>
+    </head>
+    <body>
+        <!--   头部-->
+        <style>
+            #header{
+                height:auto;
+            }
+            #header .headerImg{
+                width:100%;
+                height:auto;
+            }
+        </style>
+        <div id="header">
+            <img class="headerImg" src="../../images/2018zt/20180303qglh/list/header.jpg" alt="">
+        </div>
+        <!--    中间内容区域-->
+        <div id="body">
+            <div class="contentBar">
+                <!--               专题导航-->
+                <style>
+                    .nav{
+                        width:100%;
+                        height:30px;
+                        line-height:30px;
+                        overflow:hidden;
+                        color:#e04045;
+                        text-align: left;
+                        margin-top:34px;
+                        margin-bottom: 26px;
+                    }
+                    .nav a{
+                        color:#e04045;
+                    }
+                </style>
+                <div class="nav">
+                    <a href="">专题</a>&gt;<a href="">特别策划</a>
+                </div>   
+            </div>
+            
+            
+            <style>
+                #wrap{
+                    background-color:#ededef;
+                }
+            </style>
+            <div class="fullBar" id="wrap">
+                <div class="contentBar" id="cehuawrap">
+                    <style>
+                        #loutinav{
+                            width: 134px;
+                            height:160px;
+                            position: fixed;
+                            margin:42px 0px 0px;
+                            background-color:#ffffff;
+                            display:none;
+                        }
+
+                        #loutinav ul li{
+                            width: 134px;
+                            height: 45px;
+                            list-style: none;
+                            font-size: 20px;
+                            text-align: center;
+                            position: relative;
+                            cursor: pointer;
+                            color: #3f3f3f;
+                        }
+
+                        #loutinav ul li a{
+                            width: 84px;
+                            height: 30px;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            margin-left:-42px;
+                            color: #3f3f3f;
+                        }
+                        #loutinav ul li a i{
+                            width:30px;
+                            height:2px;
+                            position: absolute;
+                            bottom: 0px;
+                            left:50%;
+                            margin-left: -15px;
+                        }
+                        #loutinav ul li.active a i{
+                            background-color:#c8201d;
+                        }
+                        #main {
+                            width:876px;
+                            height:auto;
+                            overflow:hidden;
+                            position: relative;
+                            float:right;
+                        }
+
+                        #main .louti {
+                            min-height: 600px;
+                            width: 876px;
+                            font-size: 16px;
+                            margin:12px 0px;
+                        }
+
+                        #main .catalog{
+                            display:block;
+                            width:85px;
+                            height:30px;
+                            overflow:hidden;
+                            text-align: center;
+                            line-height: 30px;
+                            font-size:18px;
+                            color:#2f2f2f;
+                            background-color:#ffffff;
+                        }
+                        #main .content{
+                            width:876px;
+                            min-height:604px;
+                            background-color:#ffffff;
+                            margin:12px 0px;
+                            overflow:hidden;
+                        }
+                        
+                    </style>
+                    <div id="loutinav">
+                        <ul>
+                            <li class="active"><a href="javascript:void();">今日关注<i></i></a></li>
+                            <li><a href="javascript:void();">微观两会<i></i></a></li>
+                            <li><a href="javascript:void();">相关链接<i></i></a></li>
+<!--                            <li class="last">顶部</li>-->
+                        </ul>
+                    </div>
+                    <div id="main">
+                        <!--今日关注 开始-->
+                        <style>
+                            #guanzhu{
+                                overflow:hidden;
+                            }
+                            #guanzhu .content .contentwrap{
+                                width:795px;
+                                min-height:604px;
+                                margin:47px 42px 24px;
+                            }
+                            #guanzhu .content h1{
+                                width:795px;
+                                height:auto;
+                                overflow:hidden;
+                                font-size:24px;
+                                font-weight: bold;
+                                line-height: 34px;
+                                text-align: left;
+                                margin-bottom:10px;
+                            }
+                            #guanzhu .content .articlewrap{
+                                margin-top:18px;
+                                width:795px;
+                                height:480px;
+                                overflow:hidden;
+                            }
+                            #guanzhu .content .article{
+                                width:795px;
+                                min-height:399px;
+                                text-align: left;
+                                font-size: 16px;
+                                line-height: 1.6em;
+                            }
+                            #guanzhu .content .article p{
+                                margin-bottom:10px;
+                            }
+                            #guanzhu .content .article div{
+                                text-align: center;
+                            }
+                            #guanzhu .content .article_all{
+                                width:325px;
+                                height:18px;
+                                overflow:hidden;
+                                margin:18px auto;
+                                background-image: url("../../images/2018zt/20180303qglh/list/article_all.jpg");
+                                display:none;
+                            }
+                        </style>
+                        <div class="louti" id="guanzhu">
+                            <a href="javascript:void();" class="catalog">今日关注</a>
+                            <div class="content">
+                               <div class="contentwrap">
+                                   
+                               
+                                    <!--文章标题-->
+                                    <h1>习近平坚守实体经济落实</h1>
+                                    <!--分享到-->
+                                    <!-- JiaThis Button BEGIN -->
+                                    <div class="fl jiathis_style">
+                                        <span class="jiathis_txt">分享到：</span>
+                                        <a class="jiathis_button_tsina"></a>
+                                        <a class="jiathis_button_cqq"></a>
+                                        <a class="jiathis_button_weixin"></a>
+                                        <a href="http://www.jiathis.com/share?uid=2126049" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                        <a class="jiathis_counter_style"></a>
+                                    </div>
+                                    <script type="text/javascript">
+                                        var jiathis_config = {data_track_clickback:'true'};
+                                    </script>
+                                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2126049" charset="utf-8"></script>
+                                    <!-- JiaThis Button END -->
+                                   <div class="clearfix"></div>
+                                    <!--文章内容-->
+                                    <div class="articlewrap">
+                                        <div class="article">
+                                            <p>新华社北京３月１５日电题：为实现中国梦奠定坚实的法治基石——民法总则诞生之际展望中国民法典
+
+
+                                                现在我们比历史上任何时期都更加接近实现中华民族伟大复兴中国梦的目标。在这一时代背景下，编纂民法典具有重大而深远的意义。
+
+                                                践行创新理念，注重统筹兼顾，增强生态意识，秉持开放包容，坚守公平正义……民法典编纂和民法总则制定充分发挥立法的引领和推动作用，为经济社会平衡、包容和可持续发展提供坚实支撑。
+
+                                                编纂一部“创新”的民法典——民法总则把社会主义核心价值观写入开篇第一条，</p>
+                                            <p style="text-align:center;">
+                                                <img src="http://www.rmzxb.com.cn/upload/resources/image/2017/03/15/1634147_500x500.jpg" alt="">
+                                            </p>
+                                            <p>新华社记者杨维汉、罗沙、丁小溪
+
+                                                这是一个历史性时刻——
+
+                                                ２０１７年３月１５日上午。北京，人民大会堂。中国民法典的开篇之作——《中华人民共和国民法总则》诞生了。被誉为“社会生活百科全书”的民法典翻开了第一页。
+
+                                                这是一个崭新的起点——
+
+                                                以习近平同志为核心的党中央高度重视民法典编纂工作，党的十八届四中全会明确提出编纂民法典这一重大立法任务。新中国几代人孜孜以求的“中国民法典”梦想迈出坚实一步，必将为法治中国建设筑牢根基，为奋进中国提供不竭动力。
+
+                                                治国安邦的制度提升——编纂民法典坚持党的领导，走中国特色社会主义法治道路，推动法治中国建设迈上新高度
+
+                                                一部民法典，提升的是一个国家治理水平。
+
+                                                “民法”是法律体系这座“大厦”最重要的支柱之一。民法典编纂是一个国家和民族法律传统、法治信仰和法治自信集大成者。
+
+                                                编纂中国人民自己的民法典，是中国立法者、法律工作者乃至全体人民的梦想，更凝聚着国家民族崛起的雄心壮志。
+
+                                                几度沧海桑田。当今的中国，需要一部什么样的民法典？
+                                            </p>
+
+                                            <div>
+                                                <img src="http://www.rmzxb.com.cn/upload/resources/image/2017/03/15/1634146_500x500.jpg" alt="">
+                                            </div>
+                                            <p>新华社记者杨维汉、罗沙、丁小溪
+
+                                                这是一个历史性时刻——
+
+                                                ２０１７年３月１５日上午。北京，人民大会堂。中国民法典的开篇之作——《中华人民共和国民法总则》诞生了。被誉为“社会生活百科全书”的民法典翻开了第一页。
+
+                                                这是一个崭新的起点——
+
+                                                以习近平同志为核心的党中央高度重视民法典编纂工作，党的十八届四中全会明确提出编纂民法典这一重大立法任务。新中国几代人孜孜以求的“中国民法典”梦想迈出坚实一步，必将为法治中国建设筑牢根基，为奋进中国提供不竭动力。
+
+                                                治国安邦的制度提升——编纂民法典坚持党的领导，走中国特色社会主义法治道路，推动法治中国建设迈上新高度
+
+                                                一部民法典，提升的是一个国家治理水平。
+
+                                                “民法”是法律体系这座“大厦”最重要的支柱之一。民法典编纂是一个国家和民族法律传统、法治信仰和法治自信集大成者。
+
+                                                编纂中国人民自己的民法典，是中国立法者、法律工作者乃至全体人民的梦想，更凝聚着国家民族崛起的雄心壮志。
+
+                                                几度沧海桑田。当今的中国，需要一部什么样的民法典？
+                                            </p>
+                                            <p>新华社记者杨维汉、罗沙、丁小溪
+
+                                                这是一个历史性时刻——
+
+                                                ２０１７年３月１５日上午。北京，人民大会堂。中国民法典的开篇之作——《中华人民共和国民法总则》诞生了。被誉为“社会生活百科全书”的民法典翻开了第一页。
+
+                                                这是一个崭新的起点——
+
+                                                以习近平同志为核心的党中央高度重视民法典编纂工作，党的十八届四中全会明确提出编纂民法典这一重大立法任务。新中国几代人孜孜以求的“中国民法典”梦想迈出坚实一步，必将为法治中国建设筑牢根基，为奋进中国提供不竭动力。
+
+                                                治国安邦的制度提升——编纂民法典坚持党的领导，走中国特色社会主义法治道路，推动法治中国建设迈上新高度
+
+                                                一部民法典，提升的是一个国家治理水平。
+
+                                                “民法”是法律体系这座“大厦”最重要的支柱之一。民法典编纂是一个国家和民族法律传统、法治信仰和法治自信集大成者。
+
+                                                编纂中国人民自己的民法典，是中国立法者、法律工作者乃至全体人民的梦想，更凝聚着国家民族崛起的雄心壮志。
+
+                                                几度沧海桑田。当今的中国，需要一部什么样的民法典？
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <!--文章内容结束-->
+                                    <!--显示全文-->
+                                    <div class="article_all"></div>
+                                    <!--显示全文结束-->
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            var oGuanzhu = document.getElementById('guanzhu');
+                            var oArtWrap = getByClass(oGuanzhu,'articlewrap')[0];
+                            var oArt = getByClass(oGuanzhu,'article')[0];
+                            var oArtAll = getByClass(oGuanzhu,'article_all')[0];
+                            if(oArt.offsetHeight >= 480){
+                                oArtAll.style.display = 'block';
+                            }
+                            oArtAll.onclick = function(){
+                                oArtWrap.style.height = 'auto';
+                                this.style.display = 'none';
+                            }
+                        </script>
+                        <!--今日关注 结束-->
+                        <!--微观两会 开始-->
+                        <div class="louti" id="weiguan">
+                            <a href="javascript:void();" class="catalog">微观两会</a>
+                            
+                            <div class="content">
+                                <!--轮播图-->
+                                <style>
+                                    .banner{width: 875px;height: 718px;margin: 0px auto;position: relative;overflow: hidden;z-index: 1;}
+                                    .img{position: absolute;top: 0;left: 0;}
+                                    .des{position: absolute;bottom: 0;left: 0;z-index: -2;background: #ccc}
+                                    .des li{float: left;width: 600px;}
+                                    .img li{float: left;width:875px;height:718px;overflow:hidden;text-align: center;}
+                                    .img li i{display: block; width:44px;height:44px;overflow:hidden;position: absolute;top:50%;left:50%;margin-top:-22px;margin-left:-22px;background-image: url("../../images/2018zt/20180303qglh/playBtn.png")}
+                                    .num{position: absolute;bottom: 30px;width: 100%;text-align: center;font-size: 0;}
+                                    .num li{width: 10px;height: 10px;background:#666666;display: block;border-radius: 100%;display: inline-block;margin: 0 5px;cursor: pointer;}
+                                    .btn{display: block;}
+                                    .btn span{display: block;width: 34px;height: 64px;}
+                                    .btn .prev{position: absolute;left: 10px;top: 50%;margin-top: -32px;background-image:url("../../images/2018zt/20180303qglh/list/left.png");}
+                                    .btn .next{position: absolute;right: 10px;top: 50%;margin-top: -32px;background-image:url("../../images/2018zt/20180303qglh/list/right.png");}
+                                    .num .active{background-color: #000000;}
+                                    .hide{display: none;}
+                                    
+                                    .img li h1{width:747px;height:94px;font-size:24px;line-height:94px;font-weight: bold;color:#2f2f2f;margin:0 auto;text-align: center;overflow:hidden;}
+                                    .img li img{width:747px;height:495px;overflow:hidden;margin:0px auto;}
+                                    .img li p{width:834px;height:46px;text-align:left;margin:13px auto 0px;font-size:16px;line-height: 23px;color:#2f2f2f;overflow:hidden;}
+                                </style>
+                                <div class="banner">
+                                    <ul class="img">
+                                        <li>
+                                            <a href="#">
+                                                <h1>1习近平坚守实体经济落实</h1>
+                                                <img src="/img/6.jpg" alt="第1张图片">
+                                                <p>习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实</p>
+                                                <i></i>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="num"></ul>
+<!--
+                                    <ul class="des">
+                                        <li>第一个</li>
+                                        <li>第二个</li>
+                                        <li>第三个</li>
+                                        <li>第四个</li>
+                                        <li>第五个</li>
+                                        <li>第一个</li>
+                                    </ul>
+-->
+                                    <div class="btn">
+                                        <span class="prev"></span>
+                                        <span class="next"></span>
+                                    </div>
+
+                                </div>
+
+                                <script>
+
+                                    $(function(){
+
+                                        var i=0;
+                                        var timer=null;
+                                        for (var j = 0; j < $('.img li').length; j++) { //创建圆点
+                                            $('.num').append('<li></li>')
+                                        }
+                                        $('.num li').first().addClass('active'); //给第一个圆点添加样式
+
+                                        var firstimg=$('.img li').first().clone(); //复制第一张图片
+                                        $('.img').append(firstimg).width($('.img li').length*($('.img li').width())); 
+                                        //第一张图片放到最后一张图片后，设置ul的宽度为图片张数*图片宽度
+                                        $('.des').width($('.img li').length*($('.img li').width()));
+
+
+                                        // 下一个按钮
+                                        $('.next').click(function(){
+                                            i++;
+                                            if (i==$('.img li').length) {
+                                                i=1; //这里不是i=0
+                                                $('.img').css({left:0}); //保证无缝轮播，设置left值
+                                            };
+
+                                            $('.img').stop().animate({left:-i*875},300);
+                                            if (i==$('.img li').length-1) { //设置小圆点指示
+                                                $('.num li').eq(0).addClass('active').siblings().removeClass('active');
+                                                $('.des li').eq(0).removeClass('hide').siblings().addClass('hide');
+                                            }else{
+                                                $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+                                                $('.des li').eq(i).removeClass('hide').siblings().addClass('hide');
+                                            }
+
+                                        })
+
+                                        // 上一个按钮
+                                        $('.prev').click(function(){
+                                            i--;
+                                            if (i==-1) {
+                                                i=$('.img li').length-2;
+                                                $('.img').css({left:-($('.img li').length-1)*875});
+                                            }
+                                            $('.img').stop().animate({left:-i*875},300);
+                                            $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+                                            $('.des li').eq(i).removeClass('hide').siblings().addClass('hide');
+                                        })
+
+                                        //设置按钮的显示和隐藏
+//                                        $('.banner').hover(function(){
+//                                            $('.btn').show();
+//                                        },function(){
+//                                            $('.btn').hide();
+//                                        })
+
+                                        //鼠标划入圆点
+                                        $('.num li').mouseover(function(){
+                                            var _index=$(this).index();
+                                            $('.img').stop().animate({left:-_index*875},150);
+                                            $('.num li').eq(_index).addClass('active').siblings().removeClass('active');
+                                            $('.des li').eq(_index).removeClass('hide').siblings().addClass('hide');
+                                        })
+
+                                        //定时器自动播放
+                                        timer=setInterval(function(){
+                                            i++;
+                                            if (i==$('.img li').length) {
+                                                i=1;
+                                                $('.img').css({left:0});
+                                            };
+
+                                            $('.img').stop().animate({left:-i*875},300);
+                                            if (i==$('.img li').length-1) { 
+                                                $('.num li').eq(0).addClass('active').siblings().removeClass('active');
+                                                $('.des li').eq(0).removeClass('hide').siblings().addClass('hide');
+                                            }else{
+                                                $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+                                                $('.des li').eq(i).removeClass('hide').siblings().addClass('hide');
+                                            }
+                                        },3000)
+
+                                        //鼠标移入，暂停自动播放，移出，开始自动播放
+                                        $('.banner').hover(function(){ 
+                                            clearInterval(timer);
+                                        },function(){
+                                            timer=setInterval(function(){
+                                                i++;
+                                                if (i==$('.img li').length) {
+                                                    i=1;
+                                                    $('.img').css({left:0});
+                                                };
+
+                                                $('.img').stop().animate({left:-i*875},300);
+                                                if (i==$('.img li').length-1) { 
+                                                    $('.num li').eq(0).addClass('active').siblings().removeClass('active');
+                                                    $('.des li').eq(0).removeClass('hide').siblings().addClass('hide');
+                                                }else{
+                                                    $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+                                                    $('.des li').eq(i).removeClass('hide').siblings().addClass('hide');
+                                                }
+                                            },3000)
+                                        })
+
+                                    })
+                                </script>
+                                <!--轮播图结束-->
+                            </div>
+                        </div>
+                        <!--微观两会 结束-->
+                        <!--相关链接 开始-->
+                        <div class="louti" id="xiangguan">
+                            <a href="javascript:void();" class="catalog">相关链接</a>
+                            <div class="content">
+                                <style>
+                                    #xiangguan ul{
+                                        width:770px;
+                                        height:auto;
+                                        margin:54px auto;
+                                        overflow:hidden;
+                                    }
+                                    #xiangguan ul li{
+                                        width:770px;
+                                        height:160px;
+                                        padding-bottom: 45px;
+                                        margin-bottom:48px;
+                                        border-bottom: 1px solid #dadada;
+                                        overflow:hidden;
+                                    }
+                                    #xiangguan ul li img{
+                                        width:240px;
+                                        height:160px;
+                                        overflow:hidden;
+                                        float:left;
+                                    }
+                                    #xiangguan ul li h1{
+                                        width:505px;
+                                        height:66px;
+                                        overflow:hidden;
+                                        font-size:24px;
+                                        font-weight: bold;
+                                        color: #2f2f2f;
+                                        line-height: 33px;
+                                        text-align: center;
+                                        float:right;
+                                    }
+                                    #xiangguan ul li p{
+                                        width:505px;
+                                        height:88px;
+                                        overflow:hidden;
+                                        font-size:16px;
+                                        color: #2f2f2f;
+                                        text-align: left;
+                                        line-height: 22px;
+                                        float:right;
+                                    }
+                                </style>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="/img/4.jpg" alt="">
+                                            <h1>习近平坚守实体经济落实</h1>
+                                            <p>习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实习近平守实体经实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实。</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="/img/4.jpg" alt="">
+                                            <h1>习近平坚守实体经济落实</h1>
+                                            <p>习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实习近平守实体经实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实。</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="/img/4.jpg" alt="">
+                                            <h1>习近平坚守实体经济落实</h1>
+                                            <p>习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实习近平守实体经实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实。</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--相关链接 结束-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    尾部-->
+        <style>
+            #footer{
+                height:auto;
+            }
+            #footer .footerImg{
+                width:100%;
+                height:auto;
+            }
+        </style>
+        <div id="footer">
+            <img class="footerImg" src="../../images/2018zt/20180303qglh/footer.jpg" alt="">
+        </div>
+        <script>
+            $(function(){
+                //1.楼梯什么时候显示，800px scroll--->scrollTop
+                $(window).on('scroll',function(){
+                    var $scroll=$(this).scrollTop();
+                    if($scroll>=0){
+                        $('#loutinav').show();
+                    }else{
+                        $('#loutinav').hide();
+                    }
+
+                    //4.拖动滚轮，对应的楼梯样式进行匹配
+//                    $('.louti').each(function(){
+//                        var $loutitop=$('.louti').eq($(this).index()).offset().top+400;
+////                        console.log($loutitop);
+//                        if($loutitop>$scroll){//楼层的top大于滚动条的距离
+//                            $('#loutinav li').removeClass('active');
+//                            $('#loutinav li').eq($(this).index()).addClass('active');
+//                            return false;//中断循环
+//                        }
+//                    });
+                    // 循环遍历出问题了 用的笨办法
+                    var $loutitop=$('.louti').eq(0).offset().top+400;
+                    //                        console.log($loutitop);
+                    if($loutitop>$scroll){//楼层的top大于滚动条的距离
+                        $('#loutinav li').removeClass('active');
+                        $('#loutinav li').eq(0).addClass('active');
+                        return false;//中断循环
+                    }
+                    
+                    var $loutitop1=$('.louti').eq(1).offset().top+400;
+                    //                        console.log($loutitop);
+                    if($loutitop1>$scroll){//楼层的top大于滚动条的距离
+                        $('#loutinav li').removeClass('active');
+                        $('#loutinav li').eq(1).addClass('active');
+                        return false;//中断循环
+                    }
+                    
+                    var $loutitop2=$('.louti').eq(2).offset().top+400;
+                    //                        console.log($loutitop);
+                    if($loutitop2>$scroll){//楼层的top大于滚动条的距离
+                        $('#loutinav li').removeClass('active');
+                        $('#loutinav li').eq(2).addClass('active');
+                        return false;//中断循环
+                    }
+                    
+                    
+//                    console.log($('.louti')[0]);
+//                    console.log($('.louti')[1]);
+//                    console.log($('.louti')[2]);
+                });
+                //2.获取每个楼梯的offset().top,点击楼梯让对应的内容模块移动到对应的位置  offset().left
+
+                var $loutili=$('#loutinav li').not('.last');
+                $loutili.on('click',function(){
+                    $(this).addClass('active').siblings('li').removeClass('active');
+                    var $loutitop=$('.louti').eq($(this).index()).offset().top;
+                    //获取每个楼梯的offsetTop值
+                    $('html,body').animate({//$('html,body')兼容问题body属于chrome
+                        scrollTop:$loutitop
+                    })
+                });
+                //3.回到顶部
+//                $('.last').on('click',function(){
+//                    $('html,body').animate({//$('html,body')兼容问题body属于chrome
+//                        scrollTop:0
+//                    })
+//                });
+
+
+
+
+            })
+        </script>
+    </body>
+</html>

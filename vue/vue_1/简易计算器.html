@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../lib/vue.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <input type="text" v-model:value="num1">
+        <select v-model="opt">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" v-model:value="num2">
+        <input type="button"  value="=" @click="count">
+        <input type="text" v-model:value="result">
+    </div>
+    <script>
+        var vm = new Vue({
+            el : '#box',
+            data : {
+                num1 : 0,
+                num2 : 0,
+                opt : '+',
+                result : 0,
+            },
+            methods : {
+                count(){
+                    if(this.opt == '+'){
+                        this.result = parseInt(this.num1) + parseInt(this.num2);
+                    }else if(this.opt == '-'){
+                        this.result = parseInt(this.num1) - parseInt(this.num2);
+                    }else if(this.opt == '*'){
+                        this.result = parseInt(this.num1) * parseInt(this.num2);
+                    }else if(this.opt == '/'){
+                        this.result = parseInt(this.num1) / parseInt(this.num2);
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

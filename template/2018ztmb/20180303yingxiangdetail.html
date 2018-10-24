@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>article.title——人民政协网</title>
+        <style>
+            *{
+                font-family:"微软雅黑","Microsoft Yahei","SimSun","宋体","Arial Narrow";
+                border:none;
+                margin:0px;
+                padding:0px;
+                letter-spacing:0;
+                font-weight:normal;
+                /*                font-size:0px;*/
+            }
+            /*
+            p{
+            text-indent: 2em;
+            }
+            */
+            b,strong{
+                font-weight:bold;
+            }
+            ul,ol,li{
+                list-style:none;
+                list-style-position:inside;
+            }
+            a{
+                text-decoration:none;
+                cursor:pointer;
+            }
+            #header,#body,#footer{
+                width:100%;
+                position:relative;
+                overflow:hidden;
+            }
+            .contentBar{
+                width:1024px;
+                min-height:1px;
+                margin:0 auto;
+                position:relative;
+                /*                background-color:red;*/
+            }
+            .fullBar{
+                min-height:1px;
+                width:100%;
+                margin:0 auto;
+                position:relative;
+                /*                background-color: yellow;*/
+            }
+            .fl{
+                float:left;
+            }
+            .fr{
+                float:right;
+            }
+            .clearfix:after{
+                content:".";
+                display:block;
+                height:0;
+                clear:both;
+                visibility:hidden
+            }
+
+            .clearfix {
+                clear: both;
+            }
+            .inline{
+                display:inline-block;
+                display:-moz-inline-block;
+                zoom:1;
+                *display:inline;
+                overflow:hidden;
+            }
+            .xiang{
+                color:#de0000;
+            }
+        </style>
+        <script src="../../js/getByclass.js"></script>
+        <script src="../../js/moveGood.js"></script>
+        <script src="../../js/jquery-1.8.3.min.js"></script>
+        <script src="http://www.rmzxb.com.cn/js/jquery-1.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--   头部-->
+        <style>
+            #header{
+                height:auto;
+            }
+            #header .headerImg{
+                width:100%;
+                height:auto;
+            }
+        </style>
+        <div id="header">
+            <img class="headerImg" src="../../images/2018zt/20180303qglh/list/header.jpg" alt="">
+        </div>
+        <!--    中间内容区域-->
+        <div id="body">
+            <div class="contentBar">
+                <!--               专题导航-->
+                <style>
+                    .nav{
+                        width:100%;
+                        height:30px;
+                        line-height:30px;
+                        overflow:hidden;
+                        color:#e04045;
+                        text-align: left;
+                        margin-top:34px;
+                        margin-bottom: 26px;
+                    }
+                    .nav a{
+                        color:#e04045;
+                    }
+                </style>
+                <div class="nav">
+                    <a href="">专题</a>&gt;<a href="">影像</a>
+                </div>
+            </div>
+            
+            <style>
+                #imgbody{
+                    background-color:#ededef;
+                    overflow:hidden;
+                }
+                #imgbody .imgBox{
+                    width:100%;
+                    height:778px;
+                    overflow: hidden;
+                    background-color: #ffffff;
+                    margin:22px 0px 38px;
+                }
+                #imgbody .imgBox .title{
+                    height:75px;
+                    width:100%;
+                    font-size:24px;
+                    font-weight: bold;
+                    color: #2f2f2f;
+                    text-align: center;
+                    line-height: 75px;
+                    overflow:hidden;
+                }
+            </style>
+            <div class="fullBar" id="imgbody">
+                <div class="contentBar">
+                    <div class="imgBox">
+                        <!--标题-->
+                        <h1 class="title">政法工作要履行好四项主要任务政法工作要履行好四项主要任务</h1>
+                        <!--分享到-->
+                        <!-- JiaThis Button BEGIN -->
+                        <div class="fr jiathis_style" style="margin-right:80px">
+                            <span class="jiathis_txt">分享到：</span>
+                            <a class="jiathis_button_tsina"></a>
+                            <a class="jiathis_button_cqq"></a>
+                            <a class="jiathis_button_weixin"></a>
+                            <a href="http://www.jiathis.com/share?uid=2126049" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                            <a class="jiathis_counter_style"></a>
+                        </div>
+                        <script type="text/javascript">
+                            var jiathis_config = {data_track_clickback:'true'};
+                        </script>
+                        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2126049" charset="utf-8"></script>
+                        <!-- JiaThis Button END -->
+                        
+                        
+                        <!--轮播开始-->
+                        <style>
+                             .v_out{width:1024px;margin:30px auto;overflow:hidden;}
+                             .v_show{width:870px;overflow:hidden;position:relative;height:646px;float:left}
+                             .v_cont{ width:8700px;position:absolute;left:0px;top:0px;}
+                             .v_cont .v_contUl{float:left;text-align:center;line-height:50px;}
+                             .v_cont .v_contUl .v_contLi{width:870px;height:646px;float:left;margin-top:2px;}
+
+                            /*---圆圈---*/
+                             .v_out_p{position:relative;overflow:visible}
+                            /*
+                             .circle{position:absolute;left: 40px;top: 290px;}
+                             .circle li{width:120px;height:60px;float:left;margin-right:10px;background:#ccc}
+                             .circle .circle-cur{background:#f00}
+                            */
+
+                            /*---切换---*/
+                             .prev, .next{float:left;padding:320px 20px 0px;}
+                             .prev a{background:url("../../images/2018zt/20180303qglh/list/left.png") no-repeat;}
+
+                             .next a{background:url("../../images/2018zt/20180303qglh/list/right.png") no-repeat;}
+                             .prev,.prev a,.next,.next a{width:36px;height:66px; display:block}
+
+                            
+                            .v_cont .v_contUl .v_contLi img{
+                                width:870px;
+                                height:577px;
+                                overflow:hidden;
+                            }
+                            .v_cont .v_contUl .v_contLi p{
+                                width:870px;
+                                height:56px;
+                                font-size: 16px;
+                                overflow: hidden;
+                                color:#2f2f2f;
+                                text-align: left;
+                                line-height: 24px;
+                            }
+                        </style>
+                        <div class="v_out v_out_p">
+
+                            <div class="prev"><a href="javascript:void(0)"></a></div>
+
+                            <div class="v_show">
+
+                                <div class="v_cont">
+                                    <ul class="v_contUl">
+                                        <li index="1"  class="v_contLi">
+                                            <img src="../../images/2.jpg" alt="">
+                                            <p>习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实习近平坚守实体经济落实</p>
+                                        </li>
+                                        <li index="2"  class="v_contLi">[第3讲]</li>
+                                        <li index="3"  class="v_contLi">[第4讲]</li>
+                                        <li index="4"  class="v_contLi">[第5讲]</li>
+                                        <li index="5"  class="v_contLi">[第6讲]</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="next"><a href="javascript:void(0)"></a> </div>
+
+                            <script type="text/javascript">
+
+                                $(function(){
+
+                                    /*======next======*/
+                                    $(".next a").click(function(){ nextscroll() });
+
+                                    function nextscroll(){
+
+                                        var vcon = $(".v_cont ");
+                                        var offset = ($(".v_cont .v_contLi").width())*-1;
+
+                                        vcon.stop().animate({left:offset},"slow",function(){
+
+                                            var firstItem = $(".v_cont .v_contUl .v_contLi").first();
+                                            vcon.find(".v_contUl").append(firstItem);
+                                            $(this).css("left","0px");
+
+                                            circle()
+
+                                        });  
+
+                                    };
+
+
+                                    function circle(){
+
+                                        var currentItem = $(".v_cont .v_contUl .v_contLi").first();
+                                        var currentIndex = currentItem.attr("index");
+
+                                        $(".circle li").removeClass("circle-cur");
+                                        $(".circle li").eq(currentIndex).addClass("circle-cur");
+
+                                    }
+
+                                    //setInterval(nextscroll,2000)
+
+                                    /*======prev======*/
+                                    $(".prev a").click(function(){
+
+                                        var vcon = $(".v_cont ");
+                                        var offset = ($(".v_cont .v_contLi").width()*-1);
+
+                                        var lastItem = $(".v_cont .v_contUl .v_contLi").last();
+                                        vcon.find(".v_contUl").prepend(lastItem);
+                                        vcon.css("left",offset);
+                                        vcon.animate({left:"0px"},"slow",function(){
+                                            circle()
+                                        })
+
+                                    });
+
+                                    /*======btn====circle======*/
+                                    var animateEnd = 1;
+
+                                    $(".circle li").click(function(){
+
+                                        if(animateEnd==0){return;}
+
+                                        $(this).addClass("circle-cur").siblings().removeClass("circle-cur");
+
+                                        var nextindex = $(this).index();
+                                        var currentindex = $(".v_cont .v_contLi").first().attr("index");
+                                        var curr = $(".v_cont .v_contLi").first().clone();
+
+                                        if(nextindex > currentindex){
+
+                                            for (var i = 0; i < nextindex - currentindex; i++) {
+
+                                                var firstItem = $(".v_cont .v_contLi").first();
+                                                $(".v_cont .v_contUl").append(firstItem); 
+
+                                            }
+
+                                            $(".v_cont .v_contUl").prepend(curr);
+
+                                            var offset = ($(".v_cont .v_contLi").width())*-1;
+
+                                            if(animateEnd==1){
+
+                                                animateEnd=0;	
+                                                $(".v_cont").stop().animate({left:offset},"slow",function(){
+
+                                                    $(".v_cont .v_contUl .v_contLi").first().remove();
+                                                    $(".v_cont").css("left","0px");
+                                                    animateEnd=1;
+
+                                                }); 
+
+                                            } 
+
+                                        }else{
+
+                                            var curt = $(".v_cont .v_contLi").last().clone();
+
+                                            for (var i = 0; i < currentindex - nextindex; i++) {
+                                                var lastItem = $(".v_cont .v_contLi").last();
+                                                $(".v_cont .v_contUl").prepend(lastItem);
+                                            }
+
+                                            $(".v_cont .v_contUl").append(curt);
+
+                                            var offset = ($(".v_cont .v_contLi").width())*-1;
+
+                                            $(".v_cont").css("left",offset);
+
+
+                                            if(animateEnd==1){
+
+                                                animateEnd=0;	
+                                                $(".v_cont").stop().animate({left:"0px"},"slow",function(){
+
+                                                    $(".v_cont .v_contUl .v_contLi").last().remove();
+                                                    animateEnd=1;
+
+                                                }); 
+
+                                            } 
+
+                                        }
+
+                                    });
+
+                                })
+
+                            </script>
+                            <!--
+                                <ul class="circle">
+
+                                <li class="circle-cur">1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+
+                                </ul>
+                            -->
+
+                        </div>
+                        <!--轮播结束-->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    尾部-->
+        <style>
+            #footer{
+                height:auto;
+            }
+            #footer .footerImg{
+                width:100%;
+                height:auto;
+            }
+        </style>
+        <div id="footer">
+            <img class="footerImg" src="../../images/2018zt/20180303qglh/footer.jpg" alt="">
+        </div>
+    </body>
+</html>

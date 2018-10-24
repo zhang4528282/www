@@ -1,0 +1,112 @@
+<div class="contentBar">
+    <!--左侧锚点-->
+    <style>
+        #loutinav{
+            width: 134px;
+            position: fixed;
+            top: 68px;
+            left: 50px;
+            background-color:#ffffff;
+            display: none;
+
+        }
+
+        #loutinav ul li{
+            width: 134px;
+            height: 56px;
+            list-style: none;
+            position: relative;
+            text-align: center;
+            line-height:56px;
+            font-size: 20px;
+            color:#3f3f3f;
+            cursor: pointer;
+        }
+
+        #loutinav ul li span{
+            display: block;
+            position: absolute;
+            width:30px;
+            height:2px;
+            /*                           background-color:#c8201d;*/
+            left:50%;
+            margin-left: -15px;
+            bottom:0px;
+        }
+        #loutinav ul li.active span{
+            background-color:#c8201d;
+        }
+    </style>
+    <div id="loutinav">
+        <ul>
+            <li class="active">今日关注<span></span></li>
+            <li>微观两会<span></span></li>
+            <li>相关链接<span></span></li>
+            <li class="last">返回顶部</li>
+        </ul>
+    </div>
+    <!--右侧内容-->
+    <style>
+        #main{
+            width:876px;
+            height:auto;
+            overflow:hidden;
+            position: relative;
+            float:right;
+        }
+        #main .louti{
+            height:800px;
+        }
+    </style>
+    <div id="main">
+
+        <!--今日关注 开始-->
+        <style>
+            #jinri{
+                width:876px;
+                /*                               height:auto;*/
+                overflow:hidden;
+                margin:14px 0px;
+            }
+            #jinri .catalog{
+                display: block;
+                width:85px;
+                height:30px;
+                text-align: center;
+                line-height: 30px;
+                overflow:hidden;
+                float: left;
+                margin-bottom: 16px;
+                background-color:#ffffff;
+                font-size:18px;
+                color:#2f2f2f;
+            }
+        </style>
+        <div id="jinri" class="louti">
+            <a href="javascript:void;" class="catalog">今日关注</a>
+            <!--内容-->
+            <div class="content">
+
+            </div>
+        </div>
+        <!--今日关注 结束-->
+        <!--微观两会 开始-->
+        <div id="weiguan" class="louti">
+            <a href="javascript:void;" class="catalog">微观两会</a>
+            <!--内容-->
+            <div class="content">
+
+            </div>
+        </div>
+        <!--微观两会 结束-->
+        <!--相关链接 开始-->
+        <div id="xiangguan" class="louti">
+            <a href="javascript:void;" class="catalog">相关链接</a>
+            <!--内容-->
+            <div class="content">
+
+            </div>
+        </div>
+        <!--相关链接 结束-->
+    </div>
+</div>
