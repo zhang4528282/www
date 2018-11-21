@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>日历网</title>
+        <script src="js/moveGood.js"></script>
+        <script src="js/getByclass.js"></script>
+        <link rel="stylesheet" href="css/rili.css">
+       
+    </head>
+    <body>
+        
+        <div id="header"></div>
+        
+        
+        <div id="body">
+            <div class="contentBar">
+<!--               左侧logo及下部分-->
+               
+               
+                <div class="fl" id="logoWrap">
+                    <i class="logo"></i>
+                    
+                    <div class="today">
+                        <p>二十四节气：寒露 第一天</p>
+                        <div class="wrap">
+                            <span>今天是2018年10月9日</span>
+                            <div class="dayBox">
+                                <span class="fl">一谦得回益</span>
+                                <span class="fr">祸生于得意</span>
+                                <div class="date">
+<!--                                    <span class="day">11</span>-->
+                                    
+<!--                                    大11可能切成图片-->
+                                    
+                                    <span class="day">
+                                        <img src="images/11.png" alt="">
+                                    </span>
+                                    
+                                    
+                                    <span class="week">星期四</span>
+                                    <span class="nongLi">农历九月初三</span>
+                                </div>
+                            </div>
+                            
+                            <div class="yiJi">
+<!--                            chage-->
+<!--                                宜-->
+                               <span>宜</span>
+                               <span>忌</span>
+                                <ul class="fl">
+                                    <li>开市</li>
+                                    <li>嫁娶</li>
+                                    <li>会友</li>
+                                    <li>动土</li>
+                                    <li>祭祀</li>
+                                    <li>出行</li>
+                                    <li>安葬</li>
+                                    <li>纳采</li>
+                                </ul>
+<!--                                忌-->
+                                <ul class="fr">
+                                    <li>社灶</li>
+                                    <li>问卜</li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="btnList">
+                                <a href="" target="_blank">宜忌查询</a>
+                                <a href="" target="_blank">黄道吉日</a>
+                                <a href="" target="_blank">节日查询</a>
+                                <a href="" target="_blank">日历表</a>
+                                <a href="" target="_blank">星座日期</a>
+                                <a href="" target="_blank">年龄对照表</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+<!--                右侧导航及下部主内容-->
+                <div class="fr" id="mainWrap">
+                    
+                    
+<!--                    上部导航条-->
+                    <div class="nav">
+                        <ul class="navBar">
+                            <li><a href="#" target="_blank">日历</a></li>
+                            <li><a href="#" target="_blank">农历</a></li>
+                            <li><a href="#" target="_blank">黄历</a></li>
+                            <li><a href="#" target="_blank">万年历</a></li>
+                            <li><a href="#" target="_blank">24节气</a></li>
+                            <li><a href="#" target="_blank">节假日表</a></li>
+                            <li><a href="#" target="_blank">日历问答</a></li>
+                            
+                            <li><a href="#" target="_blank"><i></i>手机版</a></li>
+                        </ul>
+                        
+<!--                        change-->
+                        <div class="selectWrap">
+                            <div class="select">
+                                <ul>
+                                    <li><a href="#" target="_blank">日历起源</a></li>
+                                    <li><a href="#" target="_blank">日历查询</a></li>
+                                    <li><a href="#" target="_blank">星座日历</a></li>
+                                    <li><a href="#" target="_blank">名人日历</a></li>
+                                    <li><a href="#" target="_blank">养生日历</a></li>
+                                    <li><a href="#" target="_blank">节气日历</a></li>
+                                </ul>
+                            </div>
+                            <div class="select">
+                                <ul>
+                                    <li><a href="#" target="_blank">1日历起源</a></li>
+                                    <li><a href="#" target="_blank">日历查询</a></li>
+                                    <li><a href="#" target="_blank">星座日历</a></li>
+                                    <li><a href="#" target="_blank">名人日历</a></li>
+                                    <li><a href="#" target="_blank">养生日历</a></li>
+                                    <li><a href="#" target="_blank">节气日历</a></li>
+                                </ul>
+                            </div>
+                            <div class="select">
+                                <ul>
+                                    <li><a href="#" target="_blank">2日历起源</a></li>
+                                    <li><a href="#" target="_blank">日历查询</a></li>
+                                    <li><a href="#" target="_blank">星座日历</a></li>
+                                    <li><a href="#" target="_blank">名人日历</a></li>
+                                    <li><a href="#" target="_blank">养生日历</a></li>
+                                    <li><a href="#" target="_blank">节气日历</a></li>
+                                </ul>
+                            </div>
+                            <div class="select">
+                                <ul>
+                                    <li><a href="#" target="_blank">3日历起源</a></li>
+                                    <li><a href="#" target="_blank">日历查询</a></li>
+                                    <li><a href="#" target="_blank">星座日历</a></li>
+                                    <li><a href="#" target="_blank">名人日历</a></li>
+                                    <li><a href="#" target="_blank">养生日历</a></li>
+                                    <li><a href="#" target="_blank">节气日历</a></li>
+                                </ul>
+                            </div>
+                            <div class="select">
+                                <ul>
+                                    <li><a href="#" target="_blank">4日历起源</a></li>
+                                    <li><a href="#" target="_blank">日历查询</a></li>
+                                    <li><a href="#" target="_blank">星座日历</a></li>
+                                    <li><a href="#" target="_blank">名人日历</a></li>
+                                    <li><a href="#" target="_blank">养生日历</a></li>
+                                    <li><a href="#" target="_blank">节气日历</a></li>
+                                </ul>
+                            </div>
+                            <div class="select">
+                                <ul>
+                                    <li><a href="#" target="_blank">5日历起源</a></li>
+                                    <li><a href="#" target="_blank">日历查询</a></li>
+                                    <li><a href="#" target="_blank">星座日历</a></li>
+                                    <li><a href="#" target="_blank">名人日历</a></li>
+                                    <li><a href="#" target="_blank">养生日历</a></li>
+                                    <li><a href="#" target="_blank">节气日历</a></li>
+                                </ul>
+                            </div>
+                            <div class="select">
+                                <ul>
+                                    <li><a href="#" target="_blank">6日历起源</a></li>
+                                    <li><a href="#" target="_blank">日历查询</a></li>
+                                    <li><a href="#" target="_blank">星座日历</a></li>
+                                    <li><a href="#" target="_blank">名人日历</a></li>
+                                    <li><a href="#" target="_blank">养生日历</a></li>
+                                    <li><a href="#" target="_blank">节气日历</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="select">
+                                <ul>
+                                    <li><a href="#" target="_blank">7日历起源</a></li>
+                                    <li><a href="#" target="_blank">日历查询</a></li>
+                                    <li><a href="#" target="_blank">星座日历</a></li>
+                                    <li><a href="#" target="_blank">名人日历</a></li>
+                                    <li><a href="#" target="_blank">养生日历</a></li>
+                                    <li><a href="#" target="_blank">节气日历</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                    
+                    
+                    
+<!--                    下部日历表格-->
+                    
+                    <div class="dateTab">
+                        <div class="container">
+                          
+                            
+                           
+                            <div class="weekBar">
+                                <span>星期一</span>
+                                <span>星期二</span>
+                                <span>星期三</span>
+                                <span>星期四</span>
+                                <span>星期五</span>
+                                <span>星期六</span>
+                                <span>星期日</span>
+                            </div>
+                            
+<!--                            change  li下第一个span添加class=“”dayNum-->
+                            <div class="tab">
+                                <span class="tabShadow">10</span>
+                                <ul>
+                                    <li>
+                                        <span class="dayNum">1</span>
+                                        <span>廿二</span>
+                                        <span>国庆节</span>
+                                        <i class="zuotian"></i>
+                                    </li>
+                                    <li class="tabNormal">
+                                        <span class="dayNum">2</span>
+                                        <span>廿三</span>
+                                        <span></span>
+                                        <i class="jintian"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">3</span>
+                                        <span>廿三</span>
+                                        <span></span>
+                                        <i class="mingtian"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">4</span>
+                                        <span>廿三</span>
+                                        <span>世界居住条件调查日</span>
+                                        <i class="shangban"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">5</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">6</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">7</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">8</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">9</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">10</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">11</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">12</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">13</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">14</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">15</span>
+                                        <span>廿二</span>
+                                        <span>国庆节</span>
+                                        <i class="zuotian"></i>
+                                        </li>
+                                    <li>
+                                        <span class="dayNum">16</span>
+                                        <span>廿三</span>
+                                        <span></span>
+                                        <i class="jintian"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">17</span>
+                                        <span>廿三</span>
+                                        <span></span>
+                                        <i class="mingtian"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">18</span>
+                                        <span>廿三</span>
+                                        <span>世界居住条件调查日</span>
+                                        <i class="shangban"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">19</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">20</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">21</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">22</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">23</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">24</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">25</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">26</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">27</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">28</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">29</span>
+                                        <span>廿二</span>
+                                        <span>国庆节</span>
+                                        <i class="zuotian"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">30</span>
+                                        <span>廿三</span>
+                                        <span></span>
+                                        <i class="jintian"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">31</span>
+                                        <span>廿三</span>
+                                        <span></span>
+                                        <i class="mingtian"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">1</span>
+                                        <span>廿三</span>
+                                        <span>世界居住条件调查日</span>
+                                        <i class="shangban"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">2</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">3</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                    <li>
+                                        <span class="dayNum">4</span>
+                                        <span>廿三</span>
+                                        <span>重阳节</span>
+                                        <i class="xiuxi"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            
+<!--                            下部节日-->
+                          
+                            <div class="festive">
+                                <ul>
+                                    <li>
+                                        <img src="images/shalou.png" alt="">
+                                        <span>圣诞节</span>
+                                        <span>2018-12-24</span>
+                                        <span>还有50天</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/shalou.png" alt="">
+                                        <span>圣诞节</span>
+                                        <span>2018-12-24</span>
+                                        <span>还有50天</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/shalou.png" alt="">
+                                        <span>圣诞节</span>
+                                        <span>2018-12-24</span>
+                                        <span>还有50天</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/shalou.png" alt="">
+                                        <span>圣诞节</span>
+                                        <span>2018-12-24</span>
+                                        <span>还有50天</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/shalou.png" alt="">
+                                        <span>圣诞节</span>
+                                        <span>2018-12-24</span>
+                                        <span>还有50天</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/shalou.png" alt="">
+                                        <span>圣诞节</span>
+                                        <span>2018-12-24</span>
+                                        <span>还有50天</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="js/rili.js"></script>
+
+        
+        
+    </body>
+</html>

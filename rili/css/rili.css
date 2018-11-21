@@ -1,0 +1,558 @@
+/*change*/
+*{
+    font-family:"Microsoft Yahei","微软雅黑",PingFangSC-Regular,SimHei,sans-serif;
+    border:none;
+    margin:0px;
+    padding:0px;
+    letter-spacing:0;
+    font-weight:normal;
+    /*                font-size:0px;*/
+}
+body{
+    min-width:1500px;
+}
+b,strong{
+    font-weight:bold;
+}
+ul,ol,li{
+    list-style:none;
+    list-style-position:inside;
+}
+a{
+    text-decoration:none;
+    cursor:pointer;
+}
+#header,#body,#footer{
+    width:100%;
+    position:relative;
+    overflow:hidden;
+}
+.contentBar{
+    min-height:1px;
+    width:1500px;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+}
+.fullBar{
+    min-height:1px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+}
+.autoBar{
+    min-height:1px;
+    width:auto;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden
+}
+
+.clearfix {
+    clear: both;
+}
+.inline{
+    display:inline-block;
+    display:-moz-inline-block;
+    zoom:1;
+    *display:inline;
+    overflow:hidden;
+}
+
+
+#header{
+    width: 100%;
+    height: 57px;
+    background-color: #ffd100;
+    overflow:hidden;
+}
+
+
+#body{
+    margin-top: -57px;
+}
+#body .contentBar{
+    height: 770px;
+    overflow: hidden;
+}
+
+
+#logoWrap{
+    width:382px;
+    height:751px;
+    overflow:hidden;
+    background-color: #ffd100;
+}
+#logoWrap .logo{
+    display: block;
+    width:122px;
+    height: 55px;
+    margin:18px auto 0px;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#logoWrap .today>p{
+    display: block;
+    width:100%;
+    height: 38px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 38px;
+    font-size: 15px;
+    color: #161614;
+}
+#logoWrap .today .wrap{
+    width:348px;
+    height: 619px;
+    overflow:hidden;
+    margin:0px auto;
+    background-color: #ffffff;
+    background-image: url("../images/today_bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#logoWrap .wrap>span{
+    display: block;
+    width:270px;
+    height: 27px;
+    margin:37px auto 26px;
+    line-height: 27px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #cc6600;
+    text-align: center;
+    overflow: hidden;
+}
+#logoWrap .wrap .dayBox{
+    width:270px;
+    height: 186px;
+    margin:0px auto 13px;
+    overflow:hidden;
+    position: relative;
+}
+#logoWrap .dayBox>span{
+    display: inline-block;
+    width:36px;
+    height: 186px;
+    overflow: hidden;
+    font-family: LiSu,sans-serif;
+    font-size: 21px;
+    line-height: 22px;
+    color: #7e7b77;
+    text-align: center;
+}
+#logoWrap .dayBox .date{
+    width:164px;
+    height: 186px;
+    overflow:hidden;
+    position: absolute;
+    top:0px;
+    left:50%;
+    margin-left:-84px;
+}
+#logoWrap .date span{
+    display: block;
+}
+/*change*/
+#logoWrap .date .day{
+    width:166px;
+    height: 122px;
+    overflow: hidden;
+    font-family: SimHei,sans-serif;
+    font-size: 130px;
+    color: #cc6600;
+    text-align: center;
+    line-height: 122px;
+}
+#logoWrap .date .week{
+    width:164px;
+    height: 29px;
+    background-image: url("../images/week_bg.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 29px;
+    margin-bottom: 6px;
+}
+#logoWrap .date .nongLi{
+    width:166px;
+    height: 31px;
+    overflow: hidden;
+    font-size: 18px;
+    color: #cc6600;
+    text-align: center;
+    line-height: 31px;
+}
+#logoWrap .today .yiJi{
+    width:269px;
+    height: 159px;
+    background-image: url("../images/yiji_bg.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin:0px auto;
+}
+/*change*/
+#logoWrap .yiJi>span{
+    display:inline-block;
+    width:134px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+}
+#logoWrap .yiJi>span:nth-child(1){
+    float:left;
+}
+#logoWrap .yiJi>span:nth-child(2){
+    float:right;
+}
+#logoWrap .yiJi ul{
+    width: 100px;
+    height: 109px;
+/*    margin-top: 45px;*/
+    overflow:hidden;
+}
+#logoWrap .yiJi .fl{
+    margin-left:14px;
+}
+#logoWrap .yiJi .fr{
+    margin-right:14px;
+}
+.yiJi ul li{
+    float: left;
+    width: 50px;
+    height: 27px;
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    line-height: 27px;
+    overflow:hidden;
+}
+#logoWrap .btnList{
+    width: 278px;
+    height: 120px;
+    margin:14px auto 0px;
+    overflow:hidden;
+}
+#logoWrap .btnList a{
+    display: inline-block;
+    float: left;
+    width: 125px;
+    height: 31px;
+    margin:0px 7px 9px;
+    background-image: url("../images/btnlist_bg.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 31px;
+    font-size: 16px;
+    color: #000000;
+}
+
+
+#mainWrap{
+    width: 1118px;
+    height: 751px;
+    overflow:hidden;
+    position: relative;
+}
+#mainWrap .nav{
+    width:100%;
+    height: 117px;
+    overflow:hidden;
+    position: relative;
+}
+#mainWrap .nav>ul{
+    width:100%;
+    height: 57px;
+    overflow: hidden;
+}
+#mainWrap .nav>ul li{
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    padding: 0px 30px;
+}
+#mainWrap .nav>ul li:first-child{
+    padding-left:55px;
+}
+#mainWrap .nav>ul li:last-child{
+    float:right;
+    margin-right: 20px;
+}
+#mainWrap .nav>ul li:last-child i{
+    display: inline-block;
+    width:17px;
+    height: 29px;
+    background-image: url("../images/mobile.png");
+    margin: 14px 12px;
+    float:left;
+}
+#mainWrap .nav>ul li a{
+    text-align: center;
+    line-height: 57px;
+    font-size: 18px;
+    color: #000000;
+}
+
+
+/*change*/
+#mainWrap .selectWrap{
+    width:100%;
+    height: 60px;
+    overflow:hidden;
+    background-image: url("../images/option_bg.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top:57px;
+    left:5px;
+    z-index:9;
+}
+
+#mainWrap .select{
+    width:100%;
+    height: 60px;
+    overflow:hidden;
+    display: block;
+}
+#mainWrap .select ul{
+    width:100%;
+    height: 45px;
+    overflow: hidden;
+    margin-top:8px;
+}
+#mainWrap .select ul li{
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    margin: 0px 19px;
+}
+#mainWrap .select ul li:first-child{
+    margin-left:59px;
+}
+#mainWrap .select ul li a{
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    color: #231815;
+}
+
+
+.dateTab{
+    margin-top:-60px;
+}
+.container{
+    width: 1108px;
+    padding-top: 10px;
+    margin-left: 12px;
+    position: relative;
+}
+.container .weekBar{
+    width: 100%;
+    height: 48px;
+    overflow:hidden;
+}
+.container .weekBar span{
+    display: inline-block;
+    width:154px;
+    height: 46px;
+    margin-right: 4px;
+    float:left;
+    background-color: #cc6600;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 46px;
+    text-align: center;
+}
+.container .weekBar span:nth-child(6),.container .weekBar span:nth-child(7){
+    background-color: #e64b47;
+}
+.container .weekBar span:last-child{
+    margin-right: 0px;
+}
+.container .tab{
+    width:1108px;
+    height: 559px;
+    overflow:hidden;
+    position: relative;
+}
+.container .tab .tabShadow{
+    display: block;
+    width: 1108px;
+    height: 559px;
+    font-family: "Microsoft Yahei","微软雅黑",sans-serif;
+    line-height: 559px;
+    text-align: center;
+    font-size: 380px;
+    font-weight: bold;
+    color: #fbede5;
+}
+.container .tab ul{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container .tab ul li{
+    display: inline-block;
+    width:152px;
+    height: 107px;
+    border:1px solid #e0e0e0;
+    float:left;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    position:relative;
+}
+.container .tab ul li>span{
+    display: block;
+    width:100%;
+    text-align: center;
+    overflow: hidden;
+}
+.container .tab ul li>span:nth-child(1){
+    height: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #696969;
+    line-height: 30px;
+    margin-top: 6px;
+}
+.container .tab ul li>span:nth-child(2){
+    height: 27px;
+    font-size: 18px;
+    color: #696969;
+    line-height: 27px;
+    margin-bottom: 12px;
+}
+.container .tab ul li>span:nth-child(3){
+    height: 22px;
+    font-size: 16px;
+    color: #e64b47;
+    line-height: 22px;
+}
+.container .tab ul li i{
+    position: absolute;
+    top: 0px;
+    width:57px;
+    height: 57px;
+    overflow:hidden;
+}
+.zuotian{
+    left: 0px;
+    background-image: url("../images/zuotian.png")
+}
+.jintian{
+    left: 0px;
+    background-image: url("../images/jintian.png")
+}
+.mingtian{
+    left: 0px;
+    background-image: url("../images/mingtian.png")
+}
+.xiuxi{
+    right: 0px;
+    background-image: url("../images/xiuxi.png")
+}
+.shangban{
+    right: 0px;
+    background-image: url("../images/shangban.png")
+}
+
+.tabNormal{
+    background-color: rgba(255,209,0,0.35);
+}
+/*
+.tabActive{
+background-color: rgba(166,203,250,0.35);
+}
+*/
+
+
+/*change*/
+.festive{
+    width:1108px;
+    height: 78px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+.festive ul{
+    width:100%;
+    height: 100%;
+    overflow: hidden
+}
+.festive ul li{
+    width: 360px;
+    height: 32px;
+    margin: 0px 8px 4px 0px;
+    border:1px solid #d9d9d7;
+    border-radius: 5px;
+    overflow: hidden;
+    float:left; 
+}
+.festive ul li:nth-child(3),.festive ul li:nth-child(6){
+    margin-right: 0px;
+}
+.festive ul li img{
+    display: inline-block;
+    width:24px;
+    height: 26px;
+    margin:3px 0px 30px 8px;
+    overflow:hidden;
+    float: left;
+}
+.festive ul li span{
+    display: inline-block;
+    overflow: hidden;
+}
+.festive ul li>span:nth-child(2){
+    width:122px;
+    height: 34px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 34px;
+    color: #696969;
+    float:left;
+}
+.festive ul li>span:nth-child(3){
+    width:82px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 34px;
+    color: #cc6600;
+    float: left;
+}
+.festive ul li>span:nth-child(4){
+    width:102px;
+    height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 34px;
+    color: #ffffff;
+    float: right;
+    background-image: url("../images/only_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
